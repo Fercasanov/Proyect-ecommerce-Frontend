@@ -1,0 +1,546 @@
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    list-style: none;
+    box-shadow: none;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background-image: linear-gradient(to bottom,#396ed1, #1f407d, #0f244a);
+}
+
+.conteiner{
+
+    display:flex;
+    flex-flow: column nowrap;
+    align-content: space-evenly;
+    gap:10px;
+    background-color: #a5ebd3;
+    margin:5px;
+
+}
+
+.principal{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    background-image: linear-gradient(to bottom, #baf5e2, #7bf2ca);
+}
+
+    header {
+        display: flex;
+        margin: 10px 0px 10px 0px;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: #ebfbf3;
+
+    }
+
+        .logo{
+            padding-right: 120px;
+            padding-left: 120px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-left: 30px;
+            background-image: url("logo.jpg");
+            background-repeat: no-repeat;
+            background-size:auto;
+            background-position:center;
+            background-color:   #ebfbf3 
+
+        } 
+
+        .redes{
+            margin-left: 20px;
+            margin-bottom: 10px;
+            background-color: #ebfbf3;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content:space-around;
+
+        }
+
+            .log_redes{
+                padding: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+
+                #ig{
+
+                 
+                    background-image: url(instagram.png);
+                    padding: 12px;
+                
+                }
+
+                #fb{
+                 
+                    background-image: url(facebook.png);
+                    padding: 12px;
+               
+                }
+
+                #lk{
+
+                    background-image: url(linkedin.png);
+                    padding: 12px;
+                }
+
+
+    nav {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        background-color: #ebfbf3;
+    }
+
+        nav ul{
+            display: flex;
+            flex-flow: row nowrap;
+            padding: 10px;
+        
+        }
+
+            nav ul .buscador{
+                display: flex;
+                flex-flow: row nowrap;
+                align-self: flex-start;
+                gap:5px;
+            }
+
+                #buscador{
+                    width: 275px;
+                }
+
+            nav ul .nosotros{
+
+                display: flex;
+                flex-direction: row nowrap;
+                justify-content: center;
+                align-items:stretch;
+                column-gap: 5px;
+            }
+
+                #log_home{
+
+                    color: black;
+                }
+
+            nav ul li{
+                margin-right: 10px;
+                margin-left: 30px;
+
+            }
+
+                nav ul li .logo2{
+
+                    display:flex;
+                    flex-grow: row nowrap;
+                    row-gap: 20px;
+                    column-gap: 10px;
+                    
+                    
+                }
+
+                    nav ul li a h4 {
+                        background-color: #ebfbf3;
+                        font-size: larger;
+                        color: #153063 ;
+                        font-family:'Roboto Slab', serif;;
+                        font-weight: bold;
+                        order:2;
+                    }
+
+        
+                    .usuario{
+                        padding: 10px;
+                        background-image: url(Usuario.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        order: 1;
+                            }
+
+                    .carrito{
+                        padding: 10px;
+                        background-image: url(carrito.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        order:1;
+
+                            }
+
+
+
+
+                       
+.secundaria{
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #a5ebd3;
+    gap:10px;
+
+}
+
+    .infoempresa, .p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight:bold;
+        font-size:large;
+        text-align: center;
+        line-height: 35px;
+        color: #153063;
+        margin: 5px 10px 5px 10px;
+    }
+
+
+
+
+    .infoempresa {
+        background-color:  #ebfbf3 ;
+        flex-basis: 100%;
+        padding: 40px;
+    }
+
+    
+
+    .clasificacion  {
+                height: auto;
+                display: flex;
+                flex-flow: row wrap;
+                margin-left: 10px;
+                margin-right: 10px;
+                justify-content: space-around;
+                gap:5px;
+                background-color: #ebfbf3;
+            
+        }
+
+            .product_name{
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                margin-top: 10px;
+            }
+        
+
+            .clasificacion a{
+                    display: flex;
+                    flex-flow: row wrap;
+                    row-gap: 10px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+    
+                        }
+
+
+                .clasificacion figure h4{
+     
+                    color: black;
+                }
+
+                .clasificacion figure img{
+                    padding: 2px;
+                    background:#1f407d;
+                    border-radius: 30px;
+                    -webkit-transition: 0.3s ease-in-out 0.1s;
+                    box-shadow: #000000 5px 5px 10px;
+            }
+                
+            figure img:hover{
+                -webkit-transform: scale(1.1);
+                }
+                
+               
+
+
+/* Seccion 3 */
+
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color:  #ebfbf3;
+    margin-left: 10px ;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    gap:10px;
+
+
+}
+
+
+    .formulario {
+        flex-basis: 20%;
+        background-color: #ebfbf3;
+        align-self: flex-start;
+        margin: 10px;
+        height: auto;
+        order: 2;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+        .formulario h1{
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 10px;
+        }
+
+        .formulario input{
+
+            margin:10px;
+            padding-left:5px;
+            padding-top:0.5px;
+            padding-bottom:0.5px;
+
+        }
+        
+
+        label.error {
+            color: red;
+            font-size: 1rem;
+            display: block;
+            margin-top: 5px;
+        }
+
+        input.error, textarea.error {
+            border: 2px solid red;
+            font-weight: 300;
+            color: red;
+        }
+
+            #consulta{
+
+                width: 250px;
+                height: 100px;
+            }
+
+        .formulario button {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap:5px;
+        padding: 2px;
+        margin-bottom: 10px;
+        border: 2px solid #1f407d;
+        border-radius: 15%;
+        background-color: #d7fff2;
+
+        }
+
+        .formulario button:hover{
+
+            background-color: #46e7b1;
+        }
+
+        .localizacion{
+            align-self: center;
+            margin:10px;
+            flex-basis: 5%;
+            order: 3;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            background-color: #ebfbf3;
+            gap:20px;
+    
+        }
+    
+    
+        .localizacion .contacto{
+            margin-top: 5px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+    
+        }
+                .localizacion .contacto a{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 10px;
+        
+                }
+    
+                    .localizacion .contacto a h3{
+    
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight:bold;
+                        color: #000000;
+                        font-size:medium;
+                    }
+    
+                    .localizacion .contacto a i{
+                        color: #000000;
+                    }
+    
+                    #log_productos{
+                        margin-bottom: 2px;
+                    }
+    
+    
+
+    .mapa{
+        order: 1;
+        background-color: #ebfbf3;
+    }
+    
+    
+        .mapa iframe{
+        width: 1000px;
+        height: 450px;
+        margin:10px
+        
+        }
+
+
+.grupo{
+
+    margin:10px
+}
+
+    .integrante{
+
+    display:flex;
+    flex-flow:row wrap;
+    gap:20px;
+}
+
+        .integrante li{
+
+            font-family: 'Montserrat', sans-serif;
+                            font-weight:bold;
+                            color: #000000;
+                            font-size:medium;
+        }
+
+
+@media (min-width: 768px) and (max-width: 1210px){
+    
+    footer{
+
+        flex-direction: column;
+        gap:10px;
+    }
+
+    .formulario {
+            background-color: #ebfbf3;
+            align-self: center;
+            flex-grow: 1;
+            margin: 10px;
+            height: auto;
+            order: 2;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .localizacion{
+
+            flex-direction: row;
+        }
+
+    .mapa iframe{
+        width: 700px;
+        height: 500px;
+        margin:5px
+            
+            }
+}
+
+
+@media (min-width:320px) and (max-width: 768px){
+
+    nav ul{
+
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin:10px;
+   
+    }
+
+        #buscador{
+            width: 200px;
+        }
+
+
+        nav ul li{
+
+            padding-top: 10px ;
+
+            padding-bottom: 10px ;
+        }
+
+
+    .secundaria{
+
+        flex-flow: column nowrap;
+    }
+
+        .infoempresa {
+            display: none;
+        }
+
+    footer{
+
+        flex-direction: column;
+    }
+
+    .formulario {
+            background-color: #ebfbf3;
+            align-self: center;
+            height: auto;
+            order: 2;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+
+    .localizacion{
+
+            flex-direction: column;
+        }
+        
+
+    .mapa iframe{
+        width: 250px;
+        height: 250px;
+        margin:0px
+            
+            }
+}
+
+
+
+
+
