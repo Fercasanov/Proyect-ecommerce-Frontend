@@ -174,26 +174,24 @@ body{
 
 }
 
-    .infoempresa, .p{
-        font-family: 'Montserrat', sans-serif;
-        font-weight:bold;
-        font-size:large;
-        text-align: center;
-        line-height: 35px;
-        color: #153063;
-        margin: 5px 10px 5px 10px;
-    }
-
-
-
-
     .infoempresa {
+        display: none;
         background-color:  #ebfbf3 ;
         flex-basis: 100%;
         padding: 40px;
     }
 
-    
+
+        .infoempresa, .p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight:bold;
+            font-size:large;
+            text-align: center;
+            line-height: 35px;
+            color: #153063;
+            margin: 5px 10px 5px 10px;
+        }
+
 
     .clasificacion  {
                 height: auto;
@@ -268,7 +266,7 @@ footer{
         margin: 10px;
         height: auto;
         order: 2;
-        display: flex;
+        display: none;
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: center;
