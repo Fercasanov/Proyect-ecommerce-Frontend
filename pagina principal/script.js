@@ -42,7 +42,24 @@ $(document).ready(function(){
       
   });
 
-});
 
+  $(".nosotros").click(function(){
+
+    $(".infoempresa").css("display", "block");
+
+    $(".formulario").css("display", "none");
+
+    })
+    
+
+  $(".contacto").click(function(){
+
+    $(".formulario").css("display", "flex");
+
+    $(".infoempresa").css("display", "none");
+  
+    })
+
+});
 
   

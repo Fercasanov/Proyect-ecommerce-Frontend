@@ -73,32 +73,7 @@ body{
                 padding: 20px;
                 margin-left: 20px;
                 margin-right: 20px;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
             }
-
-                #ig{
-
-                 
-                    background-image: url(instagram.png);
-                    padding: 12px;
-                
-                }
-
-                #fb{
-                 
-                    background-image: url(facebook.png);
-                    padding: 12px;
-               
-                }
-
-                #lk{
-
-                    background-image: url(linkedin.png);
-                    padding: 12px;
-                }
-
 
     nav {
         margin-left: 10px;
@@ -199,26 +174,24 @@ body{
 
 }
 
-    .infoempresa, .p{
-        font-family: 'Montserrat', sans-serif;
-        font-weight:bold;
-        font-size:large;
-        text-align: center;
-        line-height: 35px;
-        color: #153063;
-        margin: 5px 10px 5px 10px;
-    }
-
-
-
-
     .infoempresa {
+        display: none;
         background-color:  #ebfbf3 ;
         flex-basis: 100%;
         padding: 40px;
     }
 
-    
+
+        .infoempresa, .p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight:bold;
+            font-size:large;
+            text-align: center;
+            line-height: 35px;
+            color: #153063;
+            margin: 5px 10px 5px 10px;
+        }
+
 
     .clasificacion  {
                 height: auto;
@@ -293,7 +266,7 @@ footer{
         margin: 10px;
         height: auto;
         order: 2;
-        display: flex;
+        display: none;
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: center;
@@ -415,26 +388,6 @@ footer{
         
         }
 
-
-.grupo{
-
-    margin:10px
-}
-
-    .integrante{
-
-    display:flex;
-    flex-flow:row wrap;
-    gap:20px;
-}
-
-        .integrante li{
-
-            font-family: 'Montserrat', sans-serif;
-                            font-weight:bold;
-                            color: #000000;
-                            font-size:medium;
-        }
 
 
 @media (min-width: 768px) and (max-width: 1210px){
