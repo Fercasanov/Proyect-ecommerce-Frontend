@@ -244,19 +244,56 @@ body{
 
 /* Seccion 3 */
 
-footer{
+.footer{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: center;
     justify-content: space-around;
     align-items: center;
-    background-color:  #ebfbf3;
+    background-color:#1f407d;
     margin-left: 10px ;
     margin-right: 10px;
     margin-bottom: 20px;
-    gap:10px;
-
+    gap:30px;
+    padding color: #46e7b1;
+}
+.footercontainer{
+    background-color: #46e7b1;
 
 }
+.row{
+    background-color: #46e7b1;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    background-color: #46e7b1;
+    width: 23%;
+    padding: 0 15px;
+}
+.footer-col h4 {
+    background-color: #46e7b1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    font-size:large;
+    text-align: center;
+    line-height: 35px;
+    color: black;
+    margin: 5px 10px 5px 10px;
+}
+        .footercopyright{
+            text-align: center;
+            border-top: none 2px;
+            background: #46e7b1
+        }
+
+        .footersocialmedia{
+            text-align: center;
+            border-top: none 2px;
+            background: #46e7b1
+
+        }
+
+
 
 
     .formulario {
@@ -492,6 +529,15 @@ footer{
             
             }
 }
+
+    .micuenta{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        row-gap: 10 px;
+
+
+    }
 
 
 
