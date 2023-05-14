@@ -244,6 +244,8 @@ body{
 
 /* Seccion 3 */
 
+
+
 footer{
     display: flex;
     flex-flow: row wrap;
@@ -258,6 +260,10 @@ footer{
 
 }
 
+    .tercera{
+
+        display:none;
+    }
 
     .formulario {
         flex-basis: 20%;
@@ -266,7 +272,7 @@ footer{
         margin: 10px;
         height: auto;
         order: 2;
-        display: none;
+        display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: center;

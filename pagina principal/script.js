@@ -43,23 +43,33 @@ $(document).ready(function(){
   });
 
 
-  $(".nosotros").click(function(){
-
-    $(".infoempresa").css("display", "block");
-
-    $(".formulario").css("display", "none");
-
-    })
-    
-
-  $(".contacto").click(function(){
-
-    $(".formulario").css("display", "flex");
-
-    $(".infoempresa").css("display", "none");
-  
-    })
-
 });
 
+
+
+document.addEventListener("DOMContentLoaded", function(){
+
+document.querySelector(".contacto").addEventListener("click", function(){
+    
+      document.querySelector(".tercera").style.display = "block"
+      
+//       // section_tres.forEach(function(element){
+
+//       //   console.log(element)
+
+//       //   document.querySelector(`.${element.ClassName}`).style.display="flex"
+        
+//       // });
+
+//       // document.querySelector(".infoempresa").style.display="none"
+})
+
+
+//   // document.querySelector(".nosotros").addEventListener("click", function(){
   
+//   //     document.querySelector(".infoempresa").style.display="flex"
+  
+//   //     document.querySelector(".").style.display="none"
+//   //   })  
+
+})
