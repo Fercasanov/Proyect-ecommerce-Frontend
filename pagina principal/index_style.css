@@ -31,6 +31,7 @@ body{
     flex-flow: column nowrap;
     justify-content: flex-start;
     background-image: linear-gradient(to bottom, #baf5e2, #7bf2ca);
+
 }
 
     header {
@@ -84,23 +85,12 @@ body{
         background-color: #ebfbf3;
     }
 
-        nav ul{
+        nav .nav_info{
             display: flex;
             flex-flow: row nowrap;
             padding: 10px;
         
         }
-
-            nav ul .buscador{
-                display: flex;
-                flex-flow: row nowrap;
-                align-self: flex-start;
-                gap:5px;
-            }
-
-                #buscador{
-                    width: 275px;
-                }
 
             nav ul .nosotros{
 
@@ -109,11 +99,23 @@ body{
                 justify-content: center;
                 align-items:stretch;
                 column-gap: 5px;
+                cursor: pointer;
             }
 
                 #log_home{
 
                     color: black;
+                }
+                
+
+            nav ul .contact{
+
+                    display: flex;
+                    flex-direction: row nowrap;
+                    justify-content: center;
+                    align-items:stretch;
+                    column-gap: 5px;
+                    cursor: pointer;
                 }
 
             nav ul li{
@@ -141,29 +143,38 @@ body{
                         order:2;
                     }
 
-        
-                    .usuario{
-                        padding: 10px;
-                        background-image: url(Usuario.png);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        order: 1;
+                   
+                        .list_product{
+
+                                display:none;
+
+                                flex-flow: column nowrap;
+
+                                row-gap: 30px;
+
+                                justify-content: space-around;
+
+                                align-items: flex-start;
+
+                                background-color: #46e7b1;
+
+                                position: absolute;
+
+                                z-index: 1;
+
+
                             }
 
-                    .carrito{
-                        padding: 10px;
-                        background-image: url(carrito.png);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        order:1;
+                                #product{
+                                    margin: 0px;
+                                    font-size: small;
+                                    color: #153063 ;
+                                    font-family:'Roboto Slab', serif;;
+                                    font-weight: bold;
+                                    cursor: pointer;
+                                }
 
-                            }
-
-
-
-
+/* Seccion 2 */
                        
 .secundaria{
     height: auto;
@@ -174,164 +185,132 @@ body{
 
 }
 
-    .infoempresa {
-        display: none;
-        background-color:  #ebfbf3 ;
-        flex-basis: 100%;
-        padding: 40px;
-    }
-
-
-        .infoempresa, .p{
-            font-family: 'Montserrat', sans-serif;
-            font-weight:bold;
-            font-size:large;
-            text-align: center;
-            line-height: 35px;
-            color: #153063;
-            margin: 5px 10px 5px 10px;
-        }
-
-
-    .clasificacion  {
-                height: auto;
-                display: flex;
-                flex-flow: row wrap;
-                margin-left: 10px;
-                margin-right: 10px;
-                justify-content: space-around;
-                gap:5px;
-                background-color: #ebfbf3;
-            
-        }
-
-            .product_name{
-                font-family: 'Montserrat', sans-serif;
-                text-align: center;
-                margin-top: 10px;
-            }
-        
-
-            .clasificacion a{
-                    display: flex;
-                    flex-flow: row wrap;
-                    row-gap: 10px;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-    
-                        }
-
-
-                .clasificacion figure h4{
-     
-                    color: black;
-                }
-
-                .clasificacion figure img{
-                    padding: 2px;
-                    background:#1f407d;
-                    border-radius: 30px;
-                    -webkit-transition: 0.3s ease-in-out 0.1s;
-                    box-shadow: #000000 5px 5px 10px;
-            }
-                
-            figure img:hover{
-                -webkit-transform: scale(1.1);
-                }
-                
-               
-
 
 /* Seccion 3 */
 
+.tercera{
+
+    display:none;
+}
 
 
-footer{
+.infoempresa {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color:  #ebfbf3;
-    margin-left: 10px ;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    gap:10px;
+    flex-flow: column ;
+    background-color:  #ebfbf3 ;
+    flex-basis: 100%;
+    padding: 40px;
+}
 
+
+    .infoempresa, .p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight:bold;
+        font-size:large;
+        text-align: center;
+        line-height: 35px;
+        color: #153063;
+        margin: 5px 10px 5px 10px;
+    }
+
+    
+
+
+
+/* Seccion 4 */
+
+.cuarta{
+
+    display: none;
+}
+
+
+.formulario {
+    flex-basis: 20%;
+    background-color: #ebfbf3;
+    align-self: flex-start;
+    margin: 10px;
+    height: auto;
+    order: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
 
 }
 
-    .tercera{
-
-        display:none;
+    .formulario h1{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 10px;
     }
 
-    .formulario {
-        flex-basis: 20%;
+    .formulario input{
+
+        margin:10px;
+        padding-left:5px;
+        padding-top:0.5px;
+        padding-bottom:0.5px;
+
+    }
+    
+
+    label.error {
+        color: red;
+        font-size: 1rem;
+        display: block;
+        margin-top: 5px;
+    }
+
+    input.error, textarea.error {
+        border: 2px solid red;
+        font-weight: 300;
+        color: red;
+    }
+
+        #consulta{
+
+            width: 250px;
+            height: 100px;
+        }
+
+    .formulario button {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap:5px;
+    padding: 2px;
+    margin-bottom: 10px;
+    border: 2px solid #1f407d;
+    border-radius: 15%;
+    background-color: #d7fff2;
+
+    }
+
+    .formulario button:hover{
+
+        background-color: #46e7b1;
+    }
+
+
+.mapa{
+        order: 1;
         background-color: #ebfbf3;
-        align-self: flex-start;
-        margin: 10px;
-        height: auto;
-        order: 2;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 10px;
-
     }
-
-        .formulario h1{
-            text-align: center;
-            font-family: 'Montserrat', sans-serif;
-            margin-top: 10px;
-        }
-
-        .formulario input{
-
-            margin:10px;
-            padding-left:5px;
-            padding-top:0.5px;
-            padding-bottom:0.5px;
-
-        }
+    
+    
+        .mapa iframe{
+        width: 1000px;
+        height: 450px;
+        margin:10px
         
-
-        label.error {
-            color: red;
-            font-size: 1rem;
-            display: block;
-            margin-top: 5px;
         }
 
-        input.error, textarea.error {
-            border: 2px solid red;
-            font-weight: 300;
-            color: red;
-        }
 
-            #consulta{
 
-                width: 250px;
-                height: 100px;
-            }
+/* FOOTER */
 
-        .formulario button {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        gap:5px;
-        padding: 2px;
-        margin-bottom: 10px;
-        border: 2px solid #1f407d;
-        border-radius: 15%;
-        background-color: #d7fff2;
-
-        }
-
-        .formulario button:hover{
-
-            background-color: #46e7b1;
-        }
 
         .localizacion{
             align-self: center;
@@ -379,21 +358,6 @@ footer{
                         margin-bottom: 2px;
                     }
     
-    
-
-    .mapa{
-        order: 1;
-        background-color: #ebfbf3;
-    }
-    
-    
-        .mapa iframe{
-        width: 1000px;
-        height: 450px;
-        margin:10px
-        
-        }
-
 
 
 @media (min-width: 768px) and (max-width: 1210px){
