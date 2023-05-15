@@ -10,6 +10,7 @@ $(document).ready(function(){
 
   }, "El campo es obligatorio y de debe contener solamente letras");
 
+
   $(".formulario").validate({
     
     submitHandler: function(form) {
@@ -45,31 +46,48 @@ $(document).ready(function(){
 
 });
 
+// Funcion que maneja la dinamica de la barra de navegacion
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    document.querySelector(".contact").addEventListener("click", function(){
+        
+          document.querySelector(".tercera").style.display = "flex";
+
+          document.querySelector(".secundaria").style.display="none";
+
+          document.querySelector(".cuarta").style.display="none";
+
+    })
+
+    document.querySelector(".nosotros").addEventListener("click", function(){
+        
+      document.querySelector(".cuarta").style.display = "flex";
+
+      document.querySelector(".tercera").style.display="none";
+
+      document.querySelector(".secundaria").style.display="none";
+
+    })
+
+})
 
 
 document.addEventListener("DOMContentLoaded", function(){
 
-document.querySelector(".contacto").addEventListener("click", function(){
-    
-      document.querySelector(".tercera").style.display = "block"
-      
-//       // section_tres.forEach(function(element){
+  let list_product = document.querySelector(".list_product");
 
-//       //   console.log(element)
+  document.querySelector(".Productos").addEventListener("mouseover", function(){
 
-//       //   document.querySelector(`.${element.ClassName}`).style.display="flex"
-        
-//       // });
+    list_product.style.display="flex";
 
-//       // document.querySelector(".infoempresa").style.display="none"
-})
+  })
+
+  document.querySelector(".Productos").addEventListener("mouseout", function(){
+
+    list_product.style.display="none";
+
+  })
 
 
-//   // document.querySelector(".nosotros").addEventListener("click", function(){
-  
-//   //     document.querySelector(".infoempresa").style.display="flex"
-  
-//   //     document.querySelector(".").style.display="none"
-//   //   })  
-
-})
+});
