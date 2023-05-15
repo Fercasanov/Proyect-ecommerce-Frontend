@@ -177,13 +177,143 @@ body{
 /* Seccion 2 */
                        
 .secundaria{
-    height: auto;
+
     display: flex;
     flex-flow: column nowrap;
+    height: auto;
     background-color: #a5ebd3;
-    gap:10px;
+    margin: 10px;
+    column-gap: 10px;
 
 }
+
+    .secu_content{
+        height: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content:space-evenly;
+        column-gap: 10px;
+    }
+
+    .novedades{
+
+        flex-basis: 40%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .nov_titulo{
+
+        align-self: center;
+    }
+
+        .nov_sup, .nov_inf{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-content: center;
+            column-gap: 20px;
+        }
+
+        .novedad_1{
+            height: 200px;
+            width: 200px;
+            align-self: center;
+            background-color: rgb(47, 109, 163);
+            background-image: url("proteina.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position:center;
+
+        }
+
+        
+        .novedad_2 {
+            height: 200px;
+            width: 200px;
+            align-self: center;
+            background-color: rgb(107, 139, 167);
+            background-image: url("creatina.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position:center;
+        }
+
+        
+        .novedad_3 {
+            height: 200px;
+            width: 200px;
+            align-self: center;
+            background-color: rgb(44, 103, 154);
+            background-image: url("amino.jpg");
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-position:center;
+        }
+
+        
+        
+        .novedad_4{
+            height: 200px;
+            width: 200px;
+            align-self: center;
+            background-color: aliceblue;
+            background-image: url("ganador de peso.jpg");
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-position:center;
+        }
+
+    .banerlat_iz{
+        flex-basis: 20%;
+        background-image: url("banner1.jpg");
+        background-repeat: no-repeat;
+        background-size:contain;
+        align-self: stretch;
+        animation-name: propaganda_iz;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        position: sticky;
+
+
+
+    }
+
+    @keyframes propaganda_iz {
+
+        from {background-image: url("banner2.jpg");}
+
+        to {background-image:(url("banner3.jpg"));}
+
+
+        
+    }
+
+    .banerlat_der{
+        flex-basis: 20%;
+        background-image: url("banner2.jpg");
+        background-repeat: no-repeat;
+        background-size:contain;
+        align-self: stretch;
+        animation-name: propaganda_der;
+        animation-duration: 7s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        position: sticky;
+    }
+
+    @keyframes propaganda_der {
+
+        from {background-image: url("banner1.jpg");}
+
+        to {background-image:(url("banner3.jpg"));}
+
+
+        
+    }
 
 
 /* Seccion 3 */
@@ -291,6 +421,7 @@ body{
     .formulario button:hover{
 
         background-color: #46e7b1;
+        cursor: pointer;
     }
 
 
