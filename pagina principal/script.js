@@ -10,6 +10,7 @@ $(document).ready(function(){
 
   }, "El campo es obligatorio y de debe contener solamente letras");
 
+
   $(".formulario").validate({
     
     submitHandler: function(form) {
@@ -43,23 +44,50 @@ $(document).ready(function(){
   });
 
 
-  $(".nosotros").click(function(){
-
-    $(".infoempresa").css("display", "block");
-
-    $(".formulario").css("display", "none");
-
-    })
-    
-
-  $(".contacto").click(function(){
-
-    $(".formulario").css("display", "flex");
-
-    $(".infoempresa").css("display", "none");
-  
-    })
-
 });
 
-  
+// Funcion que maneja la dinamica de la barra de navegacion
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    document.querySelector(".contact").addEventListener("click", function(){
+        
+          document.querySelector(".tercera").style.display = "flex";
+
+          document.querySelector(".secundaria").style.display="none";
+
+          document.querySelector(".cuarta").style.display="none";
+
+    })
+
+    document.querySelector(".nosotros").addEventListener("click", function(){
+        
+      document.querySelector(".cuarta").style.display = "flex";
+
+      document.querySelector(".tercera").style.display="none";
+
+      document.querySelector(".secundaria").style.display="none";
+
+    })
+
+})
+
+
+document.addEventListener("DOMContentLoaded", function(){
+
+  let list_product = document.querySelector(".list_product");
+
+  document.querySelector(".Productos").addEventListener("mouseover", function(){
+
+    list_product.style.display="flex";
+
+  })
+
+  document.querySelector(".Productos").addEventListener("mouseout", function(){
+
+    list_product.style.display="none";
+
+  })
+
+
+});
