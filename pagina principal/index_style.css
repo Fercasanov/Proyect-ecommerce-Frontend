@@ -5,7 +5,7 @@
     list-style: none;
     box-shadow: none;
     box-sizing: border-box;
-
+    cursor: pointer;
 }
 
 body{
@@ -54,7 +54,7 @@ body{
             margin-left: 30px;
             background-image: url("logo.jpg");
             background-repeat: no-repeat;
-            background-size:auto;
+            background-size:contain;
             background-position:center;
             background-color:   #ebfbf3 
 
@@ -66,15 +66,10 @@ body{
             background-color: #ebfbf3;
             display: flex;
             flex-flow: row nowrap;
-            justify-content:space-around;
+            justify-content:center;
+            gap: 20px;
 
         }
-
-            .log_redes{
-                padding: 20px;
-                margin-left: 20px;
-                margin-right: 20px;
-            }
 
     nav {
         margin-left: 10px;
@@ -85,103 +80,88 @@ body{
         background-color: #ebfbf3;
     }
 
-        nav .nav_info{
+       .nav_info{
             display: flex;
             flex-flow: row nowrap;
-            padding: 10px;
+            justify-content: space-around;
+            align-items: center;
+            column-gap: 30px;
+            padding: 20px;
         
         }
 
-            nav ul .nosotros{
+            .ul_categoria{
 
-                display: flex;
-                flex-direction: row nowrap;
-                justify-content: center;
-                align-items:stretch;
-                column-gap: 5px;
-                cursor: pointer;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                font-size:medium;
+                text-align: center;
+
             }
 
-                #log_home{
-
-                    color: black;
-                }
-                
-
-            nav ul .contact{
+                .home, .nosotros, .contact, .login{
 
                     display: flex;
                     flex-direction: row nowrap;
                     justify-content: center;
-                    align-items:stretch;
-                    column-gap: 5px;
-                    cursor: pointer;
-                }
-
-            nav ul li{
-                margin-right: 10px;
-                margin-left: 30px;
-
-            }
-
-                nav ul li .logo2{
-
-                    display:flex;
-                    flex-grow: row nowrap;
-                    row-gap: 20px;
+                    align-items: center;
                     column-gap: 10px;
-                    
-                    
+
                 }
 
-                    nav ul li a h4 {
-                        background-color: #ebfbf3;
-                        font-size: larger;
-                        color: #153063 ;
-                        font-family:'Roboto Slab', serif;;
+                .productos{
+
+                display: flex;
+                flex-flow: column nowrap;
+                gap: 10px;
+
+                }
+
+
+
+
+                    .log_prod{
+
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                        align-items: center;
+                        column-gap: 10px;
+                        font-size: medium;
+                        font-family: 'Roboto Slab', serif;
                         font-weight: bold;
-                        order:2;
                     }
 
-                   
-                        .list_product{
-
-                                display:none;
-
-                                flex-flow: column nowrap;
-
-                                row-gap: 30px;
-
-                                justify-content: space-around;
-
-                                align-items: flex-start;
-
-                                background-color: #46e7b1;
-
-                                position: absolute;
-
-                                z-index: 1;
+                        
+                    .list_product{
+                        margin-top: 25px;
+                        padding: 10px;
+                        display:none;
+                        flex-flow: column nowrap;
+                        row-gap: 30px;
+                        justify-content: space-around;
+                        background-color: #ebfbf3;
+                        position: absolute;
+                        z-index: 1;
 
 
-                            }
+                    }
 
-                                #product{
-                                    margin: 0px;
-                                    font-size: small;
-                                    color: #153063 ;
-                                    font-family:'Roboto Slab', serif;;
-                                    font-weight: bold;
-                                    cursor: pointer;
-                                }
+                        .product{
 
-/* Seccion 2 */
-                       
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight:bold;
+                            font-size:small;
+                 
+                        }
+
+                    
 .secundaria{
 
     display: flex;
     flex-flow: column nowrap;
     height: auto;
-    background-color: #a5ebd3;
+    background-color: white;
     margin: 10px;
     column-gap: 10px;
 
@@ -191,129 +171,169 @@ body{
         height: auto;
         display: flex;
         flex-flow: row nowrap;
-        justify-content:space-evenly;
-        column-gap: 10px;
+        justify-content:space-between;
+        background-color: #8bebc9;
     }
 
-    .novedades{
+        .novedades{
+            flex-basis: 40%;
+            margin-bottom: 15px;
 
-        flex-basis: 40%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        row-gap: 20px;
-    }
-
-    .nov_titulo{
-
-        align-self: center;
-    }
-
-        .nov_sup, .nov_inf{
+            align-self: center;
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: column nowrap;
             justify-content: center;
-            align-content: center;
-            column-gap: 20px;
+            row-gap: 20px;
+            background-color:  #ebfbf3;
+            border-radius: 7%;
+            border: #396ed1 solid 2px;
         }
 
-        .novedad_1{
-            height: 200px;
-            width: 200px;
+        .nov_titulo{
+            font-family: 'Montserrat', sans-serif;
+            font-weight:bold;
+            font-size:xx-large;
             align-self: center;
-            background-color: rgb(47, 109, 163);
-            background-image: url("proteina.jpg");
-            background-repeat: no-repeat;
-            background-size:cover;
-            background-position:center;
 
         }
 
+            .nov_sup, .nov_inf{
+                display: flex;
+                flex-flow: row nowrap;
+                margin: 10px 10px 20px 20px;
+                justify-content: space-around;
+                background-color: #a5ebd3;
+            }
+
+            .novedad_1, .novedad_2, .novedad_3, .novedad_4{
+                flex-basis: 50%;
+                display: flex;
+                flex-flow: column nowrap;
+                row-gap: 5px;
+                justify-content:flex-start;
+                align-content: flex-start;
+                background-color: #ebfbf3;
         
-        .novedad_2 {
-            height: 200px;
-            width: 200px;
-            align-self: center;
-            background-color: rgb(107, 139, 167);
-            background-image: url("creatina.jpg");
-            background-repeat: no-repeat;
-            background-size:cover;
-            background-position:center;
-        }
+            }
 
+            .tipo_product{
+                align-self: center;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                font-size:small;
         
-        .novedad_3 {
-            height: 200px;
-            width: 200px;
-            align-self: center;
-            background-color: rgb(44, 103, 154);
-            background-image: url("amino.jpg");
+        
+            }
+
+            .nom_product{
+                align-self: center;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                font-size:large;
+        
+            }
+
+            .nov_prote{
+                align-self: center;
+                padding: 100px;
+                background-color:  #ebfbf3;
+                background-image: url("proteina.jpg");
+                background-repeat: no-repeat;
+                background-size:contain;
+                background-position:center;
+                transition: 1.5s ease;
+                -webkit-transition: 1.5s ease;
+            }
+
+            .nov_prote:hover{
+                transform : scale(1.05);
+                -webkit-transform : scale(1.05);
+            }
+
+
+            
+            .nov_amino {
+                align-self: center;
+                padding: 100px;
+                background-color:  #ebfbf3;
+                background-image: url("amino.jpg");
+                background-repeat: no-repeat;
+                background-size:contain;
+                background-position:center;
+                transition: 1.5s ease;
+                -webkit-transition: 1.5s ease;
+            }
+
+            .nov_amino:hover{
+                transform : scale(1.05);
+                -webkit-transform : scale(1.05);
+            }
+
+            
+            .nov_gainer {
+                align-self: center;
+                padding: 100px;
+                background-color:  #ebfbf3;
+                background-image: url("gainer.jpg");
+                background-repeat: no-repeat;
+                background-size:contain;
+                background-position:center;
+                transition: 1.5s ease;
+                -webkit-transition: 1.5s ease;
+            }
+
+            .nov_gainer:hover{
+                transform : scale(1.05);
+                -webkit-transform : scale(1.05);
+            }
+
+
+            
+            
+            .nov_creatina{
+                align-self: center;
+                padding: 100px;
+                background-color:  #ebfbf3;
+                background-image: url("creatina.jpg");
+                background-repeat: no-repeat;
+                background-size:contain;
+                background-position:center;
+                transition: 1.5s ease;
+                -webkit-transition: 1.5s ease;
+            }
+
+            .nov_creatina:hover{
+                transform : scale(1.05);
+                -webkit-transform : scale(1.05);
+            }
+
+
+
+
+        .banerlat_iz{
+            flex-basis: 20%;
+            margin-bottom: 15px;
+            background-image: url("banner1.jpg");
             background-repeat: no-repeat;
             background-size:contain;
-            background-position:center;
+            background-color: #8bebc9;
+            background-position: center;
+            align-self: stretch;
+
         }
 
-        
-        
-        .novedad_4{
-            height: 200px;
-            width: 200px;
-            align-self: center;
-            background-color: aliceblue;
-            background-image: url("ganador de peso.jpg");
+        .banerlat_der{
+            flex-basis: 20%;
+            margin-bottom: 15px;
+            background-color: #8bebc9;
+            background-image: url("banner2.jpg");
             background-repeat: no-repeat;
             background-size:contain;
-            background-position:center;
+            background-position: center;
+            align-self: stretch;
+            
         }
 
-    .banerlat_iz{
-        flex-basis: 20%;
-        background-image: url("banner1.jpg");
-        background-repeat: no-repeat;
-        background-size:contain;
-        align-self: stretch;
-        animation-name: propaganda_iz;
-        animation-duration: 5s;
-        animation-delay: 2s;
-        animation-iteration-count: infinite;
-        position: sticky;
-
-
-
-    }
-
-    @keyframes propaganda_iz {
-
-        from {background-image: url("banner2.jpg");}
-
-        to {background-image:(url("banner3.jpg"));}
-
-
-        
-    }
-
-    .banerlat_der{
-        flex-basis: 20%;
-        background-image: url("banner2.jpg");
-        background-repeat: no-repeat;
-        background-size:contain;
-        align-self: stretch;
-        animation-name: propaganda_der;
-        animation-duration: 7s;
-        animation-delay: 2s;
-        animation-iteration-count: infinite;
-        position: sticky;
-    }
-
-    @keyframes propaganda_der {
-
-        from {background-image: url("banner1.jpg");}
-
-        to {background-image:(url("banner3.jpg"));}
-
-
-        
-    }
 
 
 /* Seccion 3 */
@@ -421,7 +441,7 @@ body{
     .formulario button:hover{
 
         background-color: #46e7b1;
-        cursor: pointer;
+
     }
 
 
