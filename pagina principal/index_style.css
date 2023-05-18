@@ -96,6 +96,7 @@ body{
                 font-weight:bold;
                 font-size:medium;
                 text-align: center;
+                color: #000000;
 
             }
 
@@ -116,8 +117,6 @@ body{
                 gap: 10px;
 
                 }
-
-
 
 
                     .log_prod{
@@ -143,6 +142,7 @@ body{
                         background-color: #ebfbf3;
                         position: absolute;
                         z-index: 1;
+                        border: solid 1px  #8bebc9;
 
 
                     }
@@ -341,122 +341,145 @@ body{
 .tercera{
 
     display:none;
-}
-
-
-.infoempresa {
-    display: flex;
-    flex-flow: column ;
-    background-color:  #ebfbf3 ;
-    flex-basis: 100%;
-    padding: 40px;
-}
-
-
-    .infoempresa, .p{
-        font-family: 'Montserrat', sans-serif;
-        font-weight:bold;
-        font-size:large;
-        text-align: center;
-        line-height: 35px;
-        color: #153063;
-        margin: 5px 10px 5px 10px;
-    }
-
-    
-
-
-
-/* Seccion 4 */
-
-.cuarta{
-
-    display: none;
-}
-
-
-.formulario {
-    flex-basis: 20%;
-    background-color: #ebfbf3;
-    align-self: flex-start;
-    margin: 10px;
-    height: auto;
-    order: 2;
-    display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    row-gap: 20px;
+    background-color: #c5fae8;
 
 }
 
-    .formulario h1{
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 10px;
-    }
-
-    .formulario input{
-
-        margin:10px;
-        padding-left:5px;
-        padding-top:0.5px;
-        padding-bottom:0.5px;
-
-    }
-    
-
-    label.error {
-        color: red;
-        font-size: 1rem;
-        display: block;
-        margin-top: 5px;
-    }
-
-    input.error, textarea.error {
-        border: 2px solid red;
-        font-weight: 300;
-        color: red;
-    }
-
-        #consulta{
-
-            width: 250px;
-            height: 100px;
-        }
-
-    .formulario button {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    gap:5px;
-    padding: 2px;
-    margin-bottom: 10px;
-    border: 2px solid #1f407d;
-    border-radius: 15%;
-    background-color: #d7fff2;
-
-    }
-
-    .formulario button:hover{
-
-        background-color: #46e7b1;
-
-    }
-
-
-.mapa{
-        order: 1;
-        background-color: #ebfbf3;
-    }
-    
-    
-        .mapa iframe{
-        width: 1000px;
-        height: 450px;
-        margin:10px
+    .ban_quienes{
+        width: 1400px;
+        height: 400px;
+        align-self: center;
+        margin-left: 10px;
+        background-image: url("Banner-Quienes.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         
+
+    }
+
+    .infoempresa {
+        display: flex;
+        flex-flow: column nowrap ;
+        align-self: center;
+        justify-content: flex-start;
+        background-color:  #ebfbf3 ;
+        padding: 10px;
+        border-radius: 1%;
+        border: 2px groove #153063; ;
+    }
+
+
+            p{
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bolder;
+                font-size:large;
+                text-align:justify;
+                line-height: 35px;
+                color: #153063;
+                margin: 5px 10px 5px 10px;
+            }
+
+            
+
+
+
+    /* Seccion 4 */
+
+    .cuarta{
+
+        display: none;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 20px;
+        align-content: stretch;
+        background-color:  #8bebc9;;
+    }
+
+
+    .formulario {
+        background-color: #ebfbf3;
+        align-self: flex-start;
+        height: auto;
+        order: 2;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+        .formulario h1{
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 10px;
         }
+
+        .formulario input{
+
+            margin:10px;
+            padding-left:5px;
+            padding-top:0.5px;
+            padding-bottom:0.5px;
+
+        }
+        
+
+        label.error {
+            color: red;
+            font-size: 1rem;
+            display: block;
+            margin-top: 5px;
+        }
+
+        input.error, textarea.error {
+            border: 2px solid red;
+            font-weight: 300;
+            color: red;
+        }
+
+            #consulta{
+
+                width: 250px;
+                height: 100px;
+            }
+
+        .formulario button {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap:5px;
+        padding: 2px;
+        margin-bottom: 10px;
+        border: 2px solid #1f407d;
+        border-radius: 15%;
+        background-color: #d7fff2;
+
+        }
+
+        .formulario button:hover{
+
+            background-color: #46e7b1;
+
+        }
+
+
+    .mapa{
+            order: 1;
+            background-color: #8bebc9;
+        }
+        
+        
+            .mapa iframe{
+            width: 800px;
+            height: 400px;
+        
+            }
 
 
 
