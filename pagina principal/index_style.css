@@ -338,6 +338,7 @@ body{
 
 /* Seccion 3 */
 
+
 .tercera{
 
     display:none;
@@ -348,6 +349,45 @@ body{
     background-color: #c5fae8;
 
 }
+    .infocontacto{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    .micuenta{
+       
+    }
+    .sobrenosotros{
+    
+        
+    }
+    .contactanos{
+        
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        text-align: center;
+        row-gap: 10px;
+    }
+
+    .icon{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        row-gap: 10px;
+        size: 5px;
+
+    }
+    .redesfooter{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    .copyright{
+        align-self: center;
+    }
+
+
 
     .ban_quienes{
         width: 1400px;
@@ -485,6 +525,16 @@ body{
 
 /* FOOTER */
 
+footer {
+    display: flex;
+    flex-flow: column nowrap; 
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    margin: 10px;
+    background-color:#a5ebd3;
+}
+
 
         .localizacion{
             align-self: center;
@@ -536,12 +586,7 @@ body{
 
 @media (min-width: 768px) and (max-width: 1210px){
     
-    footer{
-
-        flex-direction: column;
-        gap:10px;
-    }
-
+   
     .formulario {
             background-color: #ebfbf3;
             align-self: center;
@@ -604,10 +649,7 @@ body{
             display: none;
         }
 
-    footer{
-
-        flex-direction: column;
-    }
+   
 
     .formulario {
             background-color: #ebfbf3;
@@ -636,6 +678,15 @@ body{
             
             }
 }
+
+    .micuenta{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        row-gap: 10 px;
+
+
+    }
 
 
 
