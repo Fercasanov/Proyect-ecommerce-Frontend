@@ -5,7 +5,7 @@
     list-style: none;
     box-shadow: none;
     box-sizing: border-box;
-
+    cursor: pointer;
 }
 
 body{
@@ -31,6 +31,7 @@ body{
     flex-flow: column nowrap;
     justify-content: flex-start;
     background-image: linear-gradient(to bottom, #baf5e2, #7bf2ca);
+
 }
 
     header {
@@ -53,7 +54,7 @@ body{
             margin-left: 30px;
             background-image: url("logo.jpg");
             background-repeat: no-repeat;
-            background-size:auto;
+            background-size:contain;
             background-position:center;
             background-color:   #ebfbf3 
 
@@ -65,15 +66,10 @@ body{
             background-color: #ebfbf3;
             display: flex;
             flex-flow: row nowrap;
-            justify-content:space-around;
+            justify-content:center;
+            gap: 20px;
 
         }
-
-            .log_redes{
-                padding: 20px;
-                margin-left: 20px;
-                margin-right: 20px;
-            }
 
     nav {
         margin-left: 10px;
@@ -84,176 +80,273 @@ body{
         background-color: #ebfbf3;
     }
 
-        nav ul{
+       .nav_info{
             display: flex;
             flex-flow: row nowrap;
-            padding: 10px;
+            justify-content: space-around;
+            align-items: center;
+            column-gap: 30px;
+            padding: 20px;
         
         }
 
-            nav ul .buscador{
-                display: flex;
-                flex-flow: row nowrap;
-                align-self: flex-start;
-                gap:5px;
-            }
+            .ul_categoria{
 
-                #buscador{
-                    width: 275px;
-                }
-
-            nav ul .nosotros{
-
-                display: flex;
-                flex-direction: row nowrap;
-                justify-content: center;
-                align-items:stretch;
-                column-gap: 5px;
-            }
-
-                #log_home{
-
-                    color: black;
-                }
-
-            nav ul li{
-                margin-right: 10px;
-                margin-left: 30px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                font-size:medium;
+                text-align: center;
+                color: #000000;
 
             }
 
-                nav ul li .logo2{
+                .home, .nosotros, .contact, .login{
 
-                    display:flex;
-                    flex-grow: row nowrap;
-                    row-gap: 20px;
+                    display: flex;
+                    flex-direction: row nowrap;
+                    justify-content: center;
+                    align-items: center;
                     column-gap: 10px;
-                    
-                    
+
                 }
 
-                    nav ul li a h4 {
-                        background-color: #ebfbf3;
-                        font-size: larger;
-                        color: #153063 ;
-                        font-family:'Roboto Slab', serif;;
+                .productos{
+
+                display: flex;
+                flex-flow: column nowrap;
+                gap: 10px;
+
+                }
+
+
+                    .log_prod{
+
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                        align-items: center;
+                        column-gap: 10px;
+                        font-size: medium;
+                        font-family: 'Roboto Slab', serif;
                         font-weight: bold;
-                        order:2;
                     }
 
-        
-                    .usuario{
+                        
+                    .list_product{
+                        margin-top: 25px;
                         padding: 10px;
-                        background-image: url(Usuario.png);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        order: 1;
-                            }
-
-                    .carrito{
-                        padding: 10px;
-                        background-image: url(carrito.png);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        order:1;
-
-                            }
+                        display:none;
+                        flex-flow: column nowrap;
+                        row-gap: 30px;
+                        justify-content: space-around;
+                        background-color: #ebfbf3;
+                        position: absolute;
+                        z-index: 1;
+                        border: solid 1px  #8bebc9;
 
 
+                    }
 
+                        .product{
 
-                       
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight:bold;
+                            font-size:small;
+                 
+                        }
+
+                    
 .secundaria{
-    height: auto;
+
     display: flex;
     flex-flow: column nowrap;
-    background-color: #a5ebd3;
-    gap:10px;
+    height: auto;
+    background-color: white;
+    margin: 10px;
+    column-gap: 10px;
 
 }
 
-    .infoempresa {
-        display: none;
-        background-color:  #ebfbf3 ;
-        flex-basis: 100%;
-        padding: 40px;
+    .secu_content{
+        height: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content:space-between;
+        background-color: #8bebc9;
     }
 
+        .novedades{
+            flex-basis: 40%;
+            margin-bottom: 15px;
 
-        .infoempresa, .p{
-            font-family: 'Montserrat', sans-serif;
-            font-weight:bold;
-            font-size:large;
-            text-align: center;
-            line-height: 35px;
-            color: #153063;
-            margin: 5px 10px 5px 10px;
+            align-self: center;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            row-gap: 20px;
+            background-color:  #ebfbf3;
+            border-radius: 7%;
+            border: #396ed1 solid 2px;
         }
 
+        .nov_titulo{
+            font-family: 'Montserrat', sans-serif;
+            font-weight:bold;
+            font-size:xx-large;
+            align-self: center;
 
-    .clasificacion  {
-                height: auto;
+        }
+
+            .nov_sup, .nov_inf{
                 display: flex;
-                flex-flow: row wrap;
-                margin-left: 10px;
-                margin-right: 10px;
+                flex-flow: row nowrap;
+                margin: 10px 10px 20px 20px;
                 justify-content: space-around;
-                gap:5px;
+                background-color: #a5ebd3;
+            }
+
+            .novedad_1, .novedad_2, .novedad_3, .novedad_4{
+                flex-basis: 50%;
+                display: flex;
+                flex-flow: column nowrap;
+                row-gap: 5px;
+                justify-content:flex-start;
+                align-content: flex-start;
                 background-color: #ebfbf3;
+        
+            }
+
+            .tipo_product{
+                align-self: center;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                font-size:small;
+        
+        
+            }
+
+            .nom_product{
+                align-self: center;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                font-size:large;
+        
+            }
+
+            .nov_prote{
+                align-self: center;
+                padding: 100px;
+                background-color:  #ebfbf3;
+                background-image: url("proteina.jpg");
+                background-repeat: no-repeat;
+                background-size:contain;
+                background-position:center;
+                transition: 1.5s ease;
+                -webkit-transition: 1.5s ease;
+            }
+
+            .nov_prote:hover{
+                transform : scale(1.05);
+                -webkit-transform : scale(1.05);
+            }
+
+
+            
+            .nov_amino {
+                align-self: center;
+                padding: 100px;
+                background-color:  #ebfbf3;
+                background-image: url("amino.jpg");
+                background-repeat: no-repeat;
+                background-size:contain;
+                background-position:center;
+                transition: 1.5s ease;
+                -webkit-transition: 1.5s ease;
+            }
+
+            .nov_amino:hover{
+                transform : scale(1.05);
+                -webkit-transform : scale(1.05);
+            }
+
+            
+            .nov_gainer {
+                align-self: center;
+                padding: 100px;
+                background-color:  #ebfbf3;
+                background-image: url("gainer.jpg");
+                background-repeat: no-repeat;
+                background-size:contain;
+                background-position:center;
+                transition: 1.5s ease;
+                -webkit-transition: 1.5s ease;
+            }
+
+            .nov_gainer:hover{
+                transform : scale(1.05);
+                -webkit-transform : scale(1.05);
+            }
+
+
+            
+            
+            .nov_creatina{
+                align-self: center;
+                padding: 100px;
+                background-color:  #ebfbf3;
+                background-image: url("creatina.jpg");
+                background-repeat: no-repeat;
+                background-size:contain;
+                background-position:center;
+                transition: 1.5s ease;
+                -webkit-transition: 1.5s ease;
+            }
+
+            .nov_creatina:hover{
+                transform : scale(1.05);
+                -webkit-transform : scale(1.05);
+            }
+
+
+
+
+        .banerlat_iz{
+            flex-basis: 20%;
+            margin-bottom: 15px;
+            background-image: url("banner1.jpg");
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-color: #8bebc9;
+            background-position: center;
+            align-self: stretch;
+
+        }
+
+        .banerlat_der{
+            flex-basis: 20%;
+            margin-bottom: 15px;
+            background-color: #8bebc9;
+            background-image: url("banner2.jpg");
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-position: center;
+            align-self: stretch;
             
         }
 
-            .product_name{
-                font-family: 'Montserrat', sans-serif;
-                text-align: center;
-                margin-top: 10px;
-            }
-        
-
-            .clasificacion a{
-                    display: flex;
-                    flex-flow: row wrap;
-                    row-gap: 10px;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-    
-                        }
-
-
-                .clasificacion figure h4{
-     
-                    color: black;
-                }
-
-                .clasificacion figure img{
-                    padding: 2px;
-                    background:#1f407d;
-                    border-radius: 30px;
-                    -webkit-transition: 0.3s ease-in-out 0.1s;
-                    box-shadow: #000000 5px 5px 10px;
-            }
-                
-            figure img:hover{
-                -webkit-transform: scale(1.1);
-                }
-                
-               
 
 
 /* Seccion 3 */
 
-footer {
-    display: flex;
-    flex-flow: column nowrap; 
+
+.tercera{
+
+    display:none;
+    flex-flow: column nowrap;
     justify-content: center;
     align-content: center;
-    gap: 10px;
-    margin: 10px;
-    background-color:#a5ebd3;
-
-
+    row-gap: 20px;
+    background-color: #c5fae8;
 
 }
     .infocontacto{
@@ -296,15 +389,64 @@ footer {
 
 
 
+    .ban_quienes{
+        width: 1400px;
+        height: 400px;
+        align-self: center;
+        margin-left: 10px;
+        background-image: url("Banner-Quienes.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+
+    }
+
+    .infoempresa {
+        display: flex;
+        flex-flow: column nowrap ;
+        align-self: center;
+        justify-content: flex-start;
+        background-color:  #ebfbf3 ;
+        padding: 10px;
+        border-radius: 1%;
+        border: 2px groove #153063; ;
+    }
+
+
+            p{
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bolder;
+                font-size:large;
+                text-align:justify;
+                line-height: 35px;
+                color: #153063;
+                margin: 5px 10px 5px 10px;
+            }
+
+            
+
+
+
+    /* Seccion 4 */
+
+    .cuarta{
+
+        display: none;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 20px;
+        align-content: stretch;
+        background-color:  #8bebc9;;
+    }
+
 
     .formulario {
-        flex-basis: 20%;
         background-color: #ebfbf3;
         align-self: flex-start;
-        margin: 10px;
         height: auto;
         order: 2;
-        display: none;
+        display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: center;
@@ -363,7 +505,36 @@ footer {
         .formulario button:hover{
 
             background-color: #46e7b1;
+
         }
+
+
+    .mapa{
+            order: 1;
+            background-color: #8bebc9;
+        }
+        
+        
+            .mapa iframe{
+            width: 800px;
+            height: 400px;
+        
+            }
+
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-flow: column nowrap; 
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    margin: 10px;
+    background-color:#a5ebd3;
+}
+
 
         .localizacion{
             align-self: center;
@@ -411,21 +582,6 @@ footer {
                         margin-bottom: 2px;
                     }
     
-    
-
-    .mapa{
-        order: 1;
-        background-color: #ebfbf3;
-    }
-    
-    
-        .mapa iframe{
-        width: 1000px;
-        height: 450px;
-        margin:10px
-        
-        }
-
 
 
 @media (min-width: 768px) and (max-width: 1210px){
