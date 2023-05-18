@@ -52,19 +52,19 @@ document.addEventListener("DOMContentLoaded", function(){
 
     document.querySelector(".contact").addEventListener("click", function(){
         
-          document.querySelector(".tercera").style.display = "flex";
+          document.querySelector(".cuarta").style.display = "flex";
 
           document.querySelector(".secundaria").style.display="none";
 
-          document.querySelector(".cuarta").style.display="none";
+          document.querySelector(".tercera").style.display="none";
 
     })
 
     document.querySelector(".nosotros").addEventListener("click", function(){
         
-      document.querySelector(".cuarta").style.display = "flex";
+      document.querySelector(".tercera").style.display = "flex";
 
-      document.querySelector(".tercera").style.display="none";
+      document.querySelector(".cuarta").style.display="none";
 
       document.querySelector(".secundaria").style.display="none";
 
@@ -77,13 +77,13 @@ document.addEventListener("DOMContentLoaded", function(){
 
   let list_product = document.querySelector(".list_product");
 
-  document.querySelector(".Productos").addEventListener("mouseover", function(){
+  document.querySelector(".productos").addEventListener("mouseover", function(){
 
     list_product.style.display="flex";
 
   })
 
-  document.querySelector(".Productos").addEventListener("mouseout", function(){
+  document.querySelector(".productos").addEventListener("mouseout", function(){
 
     list_product.style.display="none";
 
