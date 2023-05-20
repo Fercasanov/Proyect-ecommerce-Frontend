@@ -10,7 +10,7 @@
 
 body{
 
-    background-image: linear-gradient(to bottom,#396ed1, #1f407d, #0f244a);
+    background-image: #ffffff;
 }
 
 .conteiner{
@@ -19,40 +19,37 @@ body{
     flex-flow: column nowrap;
     align-content: space-evenly;
     gap:10px;
-    background-color: #a5ebd3;
+    background-color: #ffffff;
     margin:5px;
 
 }
 
+/* Seccion 1 */     
+
 .principal{
-    width: 100%;
     height: auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    background-image: linear-gradient(to bottom, #baf5e2, #7bf2ca);
+    background-color: #22334f;
 
 }
 
     header {
         display: flex;
-        margin: 10px 0px 10px 0px;
+        margin:10px;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        margin-left: 10px;
-        margin-right: 10px;
-        background-color: #ebfbf3;
+        background-color: #f7f6f9;
 
     }
 
         .logo{
-            padding-right: 120px;
-            padding-left: 120px;
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding: 100px;
             margin-left: 30px;
-            background-image: url("logo.jpg");
+            background-color: #46e7b1;
+            background-image: url(C:\Users\User\Desktop\Git Hub-Repos\Proyect-ecommerce-Frontend\logo2.jpeg);
             background-repeat: no-repeat;
             background-size:contain;
             background-position:center;
@@ -63,7 +60,7 @@ body{
         .redes{
             margin-left: 20px;
             margin-bottom: 10px;
-            background-color: #ebfbf3;
+            background-color: #f7f6f9;
             display: flex;
             flex-flow: row nowrap;
             justify-content:center;
@@ -72,12 +69,11 @@ body{
         }
 
     nav {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 0px 10px 10px 10px;
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
-        background-color: #ebfbf3;
+        background-color: #f7f6f9;
     }
 
        .nav_info{
@@ -100,14 +96,20 @@ body{
 
             }
 
-                .home, .nosotros, .contact, .login{
+                .nav_categoria{
 
                     display: flex;
                     flex-direction: row nowrap;
                     justify-content: center;
                     align-items: center;
                     column-gap: 10px;
+                    padding: 10px;
 
+                }
+
+                .nav_categoria:hover{
+
+                    background-color:#46e7b1;
                 }
 
                 .productos{
@@ -139,10 +141,10 @@ body{
                         flex-flow: column nowrap;
                         row-gap: 30px;
                         justify-content: space-around;
-                        background-color: #ebfbf3;
+                        background-color: #fafafa;
                         position: absolute;
                         z-index: 1;
-                        border: solid 1px  #8bebc9;
+                        border: solid 2px  #22334f;
 
 
                     }
@@ -155,38 +157,72 @@ body{
                  
                         }
 
+
+.ban_empresa{
+    background-image: url("ban_empresa1.jpeg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 280px;
+    animation-name: ban_empresa;
+    animation-duration: 10s;
+    animation-delay: 8s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
                     
+    }
+                    
+    @keyframes ban_empresa {
+                        
+        0% {
+                        
+            background-image: url("ban_empresa1.jpeg")
+                    }
+
+        30% {
+                        
+            background-image: url("ban_empresa1.jpeg")
+                    }
+
+                        
+        100%{
+                        
+            background-image: url("ban_empresa2.jpeg")
+                    }
+                                
+        }
+
+/* Seccion 2 */                  
 .secundaria{
 
     display: flex;
     flex-flow: column nowrap;
     height: auto;
-    background-color: white;
-    margin: 10px;
+    background-color: #22334f;
     column-gap: 10px;
 
 }
 
+
     .secu_content{
+        padding: 10px;
+        margin: 10px;
         height: auto;
         display: flex;
         flex-flow: row nowrap;
         justify-content:space-between;
-        background-color: #8bebc9;
+        background-color:  #ffffff;
     }
 
         .novedades{
             flex-basis: 40%;
-            margin-bottom: 15px;
-
             align-self: center;
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             row-gap: 20px;
-            background-color:  #ebfbf3;
+            background-color: #ffffff;
             border-radius: 7%;
-            border: #396ed1 solid 2px;
+            border: #22334f solid 6px;
         }
 
         .nov_titulo{
@@ -194,6 +230,9 @@ body{
             font-weight:bold;
             font-size:xx-large;
             align-self: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color:#ffffff;
 
         }
 
@@ -202,7 +241,7 @@ body{
                 flex-flow: row nowrap;
                 margin: 10px 10px 20px 20px;
                 justify-content: space-around;
-                background-color: #a5ebd3;
+                background-color:  #ffffff;
             }
 
             .novedad_1, .novedad_2, .novedad_3, .novedad_4{
@@ -210,9 +249,9 @@ body{
                 display: flex;
                 flex-flow: column nowrap;
                 row-gap: 5px;
+                background-color:  #ffffff;
                 justify-content:flex-start;
                 align-content: flex-start;
-                background-color: #ebfbf3;
         
             }
 
@@ -236,7 +275,7 @@ body{
             .nov_prote{
                 align-self: center;
                 padding: 100px;
-                background-color:  #ebfbf3;
+ 
                 background-image: url("proteina.jpg");
                 background-repeat: no-repeat;
                 background-size:contain;
@@ -255,7 +294,7 @@ body{
             .nov_amino {
                 align-self: center;
                 padding: 100px;
-                background-color:  #ebfbf3;
+    
                 background-image: url("amino.jpg");
                 background-repeat: no-repeat;
                 background-size:contain;
@@ -286,14 +325,10 @@ body{
                 transform : scale(1.05);
                 -webkit-transform : scale(1.05);
             }
-
-
-            
             
             .nov_creatina{
                 align-self: center;
                 padding: 100px;
-                background-color:  #ebfbf3;
                 background-image: url("creatina.jpg");
                 background-repeat: no-repeat;
                 background-size:contain;
@@ -312,11 +347,11 @@ body{
 
         .banerlat_iz{
             flex-basis: 20%;
-            margin-bottom: 15px;
+       
             background-image: url("banner1.jpg");
             background-repeat: no-repeat;
             background-size:contain;
-            background-color: #8bebc9;
+            background-color:   #ffffff;
             background-position: center;
             align-self: stretch;
 
@@ -324,8 +359,8 @@ body{
 
         .banerlat_der{
             flex-basis: 20%;
-            margin-bottom: 15px;
-            background-color: #8bebc9;
+      
+            background-color:   #ffffff;
             background-image: url("banner2.jpg");
             background-repeat: no-repeat;
             background-size:contain;
@@ -354,13 +389,7 @@ body{
         flex-flow: row nowrap;
         justify-content: space-around;
     }
-    .micuenta{
-       
-    }
-    .sobrenosotros{
-    
-        
-    }
+
     .contactanos{
         
         display: flex;
@@ -388,49 +417,9 @@ body{
     }
 
 
-
-    .ban_quienes{
-        width: 1400px;
-        height: 400px;
-        align-self: center;
-        margin-left: 10px;
-        background-image: url("Banner-Quienes.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        
-
-    }
-
-    .infoempresa {
-        display: flex;
-        flex-flow: column nowrap ;
-        align-self: center;
-        justify-content: flex-start;
-        background-color:  #ebfbf3 ;
-        padding: 10px;
-        border-radius: 1%;
-        border: 2px groove #153063; ;
-    }
-
-
-            p{
-                font-family: 'Montserrat', sans-serif;
-                font-weight:bolder;
-                font-size:large;
-                text-align:justify;
-                line-height: 35px;
-                color: #153063;
-                margin: 5px 10px 5px 10px;
-            }
-
-            
-
-
-
     /* Seccion 4 */
 
-    .cuarta{
+.cuarta{
 
         display: none;
         flex-flow: row nowrap;
@@ -526,63 +515,76 @@ body{
 /* FOOTER */
 
 footer {
+
     display: flex;
-    flex-flow: column nowrap; 
+    flex-flow: column nowrap;
     justify-content: center;
-    align-content: center;
-    gap: 10px;
-    margin: 10px;
-    background-color:#a5ebd3;
+    background-color:  #22334f;
+    row-gap: 30px;
+
+
 }
 
+    .foot_info{
+        padding: 20px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items:  baseline;
 
-        .localizacion{
-            align-self: center;
-            margin:10px;
-            flex-basis: 5%;
-            order: 3;
+    }
+
+
+        .link_info{
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: column nowrap;
             justify-content: center;
-            background-color: #ebfbf3;
+            background-color:  #22334f;
             gap:20px;
     
         }
-    
-    
-        .localizacion .contacto{
-            margin-top: 5px;
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: flex-start;
-    
-        }
-                .localizacion .contacto a{
-                    display: flex;
-                    flex-flow: row nowrap;
-                    justify-content: flex-end;
-                    align-items: center;
-                    gap: 10px;
-        
-                }
-    
-                    .localizacion .contacto a h3{
-    
-                        font-family: 'Montserrat', sans-serif;
-                        font-weight:bold;
-                        color: #000000;
-                        font-size:medium;
-                    }
-    
-                    .localizacion .contacto a i{
-                        color: #000000;
-                    }
-    
-                    #log_productos{
-                        margin-bottom: 2px;
-                    }
-    
 
+            .foot_titulo{
+                color: #f7f6f9;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                font-size:larger;
+                align-self: flex-start;
+            }
+
+            .link_contacto{
+                display: flex;
+                flex-flow: row nowrap;
+                column-gap: 10px;
+            }
+
+
+
+
+                h5{
+
+                    color: #f7f6f9;
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif; ;
+
+                }
+
+                #contacto_simbolo{
+
+                    color: #f7f6f9;
+                }
+
+            
+
+    .copy{
+        align-self:baseline;
+        color: #f7f6f9;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif; ;
+
+    }
+
+    
 
 @media (min-width: 768px) and (max-width: 1210px){
     

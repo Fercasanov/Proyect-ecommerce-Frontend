@@ -1,0 +1,279 @@
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    list-style: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+body{
+
+    background-image: #ffffff;
+}
+
+.conteiner{
+
+    display:flex;
+    flex-flow: column nowrap;
+    align-content: space-evenly;
+    gap:10px;
+    background-color: #ffffff;
+    margin:5px;
+
+}
+
+/* Seccion 1 */     
+
+.principal{
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    background-color: #22334f;
+
+}
+
+    header {
+        display: flex;
+        margin:10px;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f6f9;
+
+    }
+
+        .logo{
+            padding: 100px;
+            margin-left: 30px;
+            background-color: #46e7b1;
+            background-image: url("C:\Users\User\Desktop\Git Hub-Repos\Proyect-ecommerce-Frontend\pagina principal\logo2.jpeg");
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-position:center;
+            background-color:   #ebfbf3 
+
+        } 
+
+        .redes{
+            margin-left: 20px;
+            margin-bottom: 10px;
+            background-color: #f7f6f9;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content:center;
+            gap: 20px;
+
+        }
+
+    nav {
+        margin: 0px 10px 10px 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        background-color: #f7f6f9;
+    }
+
+       .nav_info{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            column-gap: 30px;
+            padding: 20px;
+        
+        }
+
+            .ul_categoria{
+
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                font-size:medium;
+                text-align: center;
+                color: #000000;
+
+            }
+
+                .nav_categoria{
+
+                    display: flex;
+                    flex-direction: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 10px;
+                    padding: 10px;
+
+                }
+
+                .nav_categoria:hover{
+
+                    background-color:#46e7b1;
+                }
+
+                .productos{
+
+                display: flex;
+                flex-flow: column nowrap;
+                gap: 10px;
+
+                }
+
+
+                    .log_prod{
+
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                        align-items: center;
+                        column-gap: 10px;
+                        font-size: medium;
+                        font-family: 'Roboto Slab', serif;
+                        font-weight: bold;
+                    }
+
+                        
+                    .list_product{
+                        margin-top: 25px;
+                        padding: 10px;
+                        display:none;
+                        flex-flow: column nowrap;
+                        row-gap: 30px;
+                        justify-content: space-around;
+                        background-color: #fafafa;
+                        position: absolute;
+                        z-index: 1;
+                        border: solid 2px  #22334f;
+
+
+                    }
+
+                        .product{
+
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight:bold;
+                            font-size:small;
+                 
+                        }
+
+
+
+
+/* Seccion 2*/
+
+.secundaria{
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        gap: 20px;
+        align-content: stretch;
+        background-color:  #8bebc9;;
+    }
+
+
+    .ban_quienes{
+        width: 1400px;
+        height: 400px;
+        align-self: center;
+        margin-left: 10px;
+        background-image: url()
+
+    }
+
+    .infoempresa {
+        display: flex;
+        flex-flow: column nowrap ;
+        align-self: center;
+        justify-content: flex-start;
+        background-color:  #ebfbf3 ;
+        padding: 10px;
+        border-radius: 1%;
+        border: 2px groove #153063; ;
+    }
+
+
+            p{
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bolder;
+                font-size:large;
+                text-align:justify;
+                line-height: 35px;
+                color: #153063;
+                margin: 5px 10px 5px 10px;
+            }
+
+            
+
+/* FOOTER */
+
+footer {
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color:  #22334f;
+    row-gap: 30px;
+
+
+}
+
+    .foot_info{
+        padding: 20px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items:  baseline;
+
+    }
+
+
+        .link_info{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            background-color:  #22334f;
+            gap:20px;
+    
+        }
+
+            .foot_titulo{
+                color: #f7f6f9;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                font-size:larger;
+                align-self: flex-start;
+            }
+
+            .link_contacto{
+                display: flex;
+                flex-flow: row nowrap;
+                column-gap: 10px;
+            }
+
+
+
+
+                h5{
+
+                    color: #f7f6f9;
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif; ;
+
+                }
+
+                #contacto_simbolo{
+
+                    color: #f7f6f9;
+                }
+
+            
+
+    .copy{
+        align-self:baseline;
+        color: #f7f6f9;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif; ;
+
+    }
