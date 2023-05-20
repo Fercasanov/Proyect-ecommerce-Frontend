@@ -49,7 +49,7 @@ body{
             padding: 100px;
             margin-left: 30px;
             background-color: #46e7b1;
-            background-image: url("C:\Users\User\Desktop\Git Hub-Repos\Proyect-ecommerce-Frontend\pagina principal\logo2.jpeg");
+            background-image: url("C:/Users/User/Desktop/Git Hub-Repos/Proyect-ecommerce-Frontend/imagenes/logo2.jpeg");
             background-repeat: no-repeat;
             background-size:contain;
             background-position:center;
@@ -110,6 +110,7 @@ body{
                 .nav_categoria:hover{
 
                     background-color:#46e7b1;
+                    border-radius: 10%;
                 }
 
                 .productos{
@@ -167,27 +168,18 @@ body{
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        gap: 20px;
         align-content: stretch;
-        background-color:  #8bebc9;;
+        background-color:  #ffffff;;
     }
 
-
-    .ban_quienes{
-        width: 1400px;
-        height: 400px;
-        align-self: center;
-        margin-left: 10px;
-        background-image: url()
-
-    }
 
     .infoempresa {
         display: flex;
         flex-flow: column nowrap ;
         align-self: center;
         justify-content: flex-start;
-        background-color:  #ebfbf3 ;
+        background-color:  #ffffff ;
+        margin: 10px;
         padding: 10px;
         border-radius: 1%;
         border: 2px groove #153063; ;
