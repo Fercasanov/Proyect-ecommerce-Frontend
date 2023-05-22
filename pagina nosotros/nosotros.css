@@ -168,9 +168,13 @@ body{
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        align-content: stretch;
-        background-color:  #ffffff;;
+        background-color:  #ffffff;
     }
+
+    /* .ban_quienes{
+
+        padding: 100px;
+    } */
 
 
     .infoempresa {
@@ -189,26 +193,23 @@ body{
             p{
                 font-family: 'Montserrat', sans-serif;
                 font-weight:bolder;
-                font-size:large;
-                text-align:justify;
-                line-height: 35px;
+                font-size:medium;
+                text-align:center;
+                line-height: 20px;
                 color: #153063;
                 margin: 5px 10px 5px 10px;
             }
-
-            
+     
 
 /* FOOTER */
 
-footer {
+footer{
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     background-color:  #22334f;
     row-gap: 30px;
-
-
 }
 
     .foot_info{
@@ -258,14 +259,12 @@ footer {
                 #contacto_simbolo{
 
                     color: #f7f6f9;
-                }
-
-            
+                }   
 
     .copy{
+
         align-self:baseline;
         color: #f7f6f9;
         text-align: center;
         font-family: 'Montserrat', sans-serif; ;
-
     }
