@@ -60,7 +60,7 @@ body{
         .redes{
             margin-left: 20px;
             margin-bottom: 10px;
-            background-color: #f7f6f9;
+            background-color:#f7f6f9;
             display: flex;
             flex-flow: row nowrap;
             justify-content:center;
@@ -142,7 +142,7 @@ body{
                         flex-flow: column nowrap;
                         row-gap: 30px;
                         justify-content: space-around;
-                        background-color: #fafafa;
+                        background-color: #f7f6f9;
                         position: absolute;
                         z-index: 1;
                         border: solid 2px  #22334f;
@@ -158,58 +158,144 @@ body{
                  
                         }
 
-
-
-
-/* Seccion 2*/
-
 .secundaria{
 
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        background-color:  #ffffff;
-    }
-
-    /* .ban_quienes{
-
-        padding: 100px;
-    } */
-
-
-    .infoempresa {
-        display: flex;
-        flex-flow: column nowrap ;
-        align-self: center;
-        justify-content: flex-start;
-        background-color:  #ffffff ;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
         margin: 10px;
-        padding: 10px;
-        border-radius: 1%;
-        border: 2px groove #153063; ;
+        align-content: baseline;
+        background-color:  #22334f;
     }
 
 
-            p{
-                font-family: 'Montserrat', sans-serif;
-                font-weight:bolder;
-                font-size:medium;
-                text-align:center;
-                line-height: 20px;
-                color: #153063;
-                margin: 5px 10px 5px 10px;
+    .formulario {
+        margin: 5px;
+        background-color: #22334f ;
+        align-self: center;
+        flex-basis: 30%;
+        height: auto;
+        order: 2;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border:#f7f6f9 solid 2px;
+        border-radius: 5%;
+
+    }
+
+        .titulo{
+
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size:xx-large;
+            color: #f7f6f9;
+
+        }
+
+        .formulario h1{
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 10px;
+        }
+
+        .formulario input{
+
+            margin:10px;
+            padding-left:5px;
+            padding-top:0.5px;
+            padding-bottom:0.5px;
+
+        }
+        
+
+        label.error {
+            color: red;
+            font-size: 1rem;
+            display: relative;
+
+        }
+
+        input.error, textarea.error {
+            display: relative;
+            border: 2px solid red;
+            font-weight: 300;
+            color: red;
+        }
+
+            #consulta{
+
+                width: 250px;
+                height: 100px;
             }
-     
+
+        .localizacion{
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            column-gap: 20px;
+        }
+
+            .contacto{
+
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                column-gap: 10px;
+            }
+
+
+
+        .formulario button {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap:5px;
+        padding: 2px;
+        margin-bottom: 10px;
+        border: 2px solid #1f407d;
+        border-radius: 15%;
+        background-color: #f7f6f9;
+
+        }
+
+        .formulario button:hover{
+
+            background-color: #46e7b1;
+
+        }
+
+
+    .mapa{
+            order: 1;
+            background-color: #22334f ;
+            padding: 20px;
+        }
+        
+        
+            .mapa iframe{
+            width: 800px;
+            height: 500px;
+        
+            }
+
+
 
 /* FOOTER */
 
-footer{
+footer {
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     background-color:  #22334f;
     row-gap: 30px;
+
+
 }
 
     .foot_info{
@@ -232,7 +318,7 @@ footer{
         }
 
             .foot_titulo{
-                color: #f7f6f9;
+                color:#f7f6f9;
                 text-align: center;
                 font-family: 'Montserrat', sans-serif;
                 font-size:larger;
@@ -248,9 +334,9 @@ footer{
 
 
 
-                h5{
+                h3, h5{
 
-                    color: #f7f6f9;
+                    color:#f7f6f9;
                     text-align: center;
                     font-family: 'Montserrat', sans-serif; ;
 
@@ -259,12 +345,124 @@ footer{
                 #contacto_simbolo{
 
                     color: #f7f6f9;
-                }   
+                }
+
+            
 
     .copy{
-
         align-self:baseline;
         color: #f7f6f9;
         text-align: center;
         font-family: 'Montserrat', sans-serif; ;
+
     }
+
+    
+
+@media (min-width: 768px) and (max-width: 1210px){
+    
+   
+    .formulario {
+            background-color: #f7f6f9;
+            align-self: center;
+            flex-grow: 1;
+            margin: 10px;
+            height: auto;
+            order: 2;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .localizacion{
+
+            flex-direction: row;
+        }
+
+    .mapa iframe{
+        width: 700px;
+        height: 500px;
+        margin:5px
+            
+            }
+}
+
+
+@media (min-width:320px) and (max-width: 768px){
+
+    nav ul{
+
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin:10px;
+   
+    }
+
+        #buscador{
+            width: 200px;
+        }
+
+
+        nav ul li{
+
+            padding-top: 10px ;
+
+            padding-bottom: 10px ;
+        }
+
+
+    .secundaria{
+
+        flex-flow: column nowrap;
+    }
+
+        .infoempresa {
+            display: none;
+        }
+
+   
+
+    .formulario {
+            background-color: #ebfbf3;
+            align-self: center;
+            height: auto;
+            order: 2;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+
+    .localizacion{
+
+            flex-direction: column;
+        }
+        
+
+    .mapa iframe{
+        width: 250px;
+        height: 250px;
+        margin:0px
+            
+            }
+}
+
+    .micuenta{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        row-gap: 10 px;
+
+
+    }
+
+
+
+

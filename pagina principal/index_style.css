@@ -21,7 +21,6 @@ body{
     gap:10px;
     background-color: #ffffff;
     margin:5px;
-
 }
 
 /* Seccion 1 */     
@@ -166,7 +165,7 @@ body{
     padding: 280px;
     animation-name: ban_empresa;
     animation-duration: 10s;
-    animation-delay: 8s;
+    animation-delay: 2s;
     animation-direction: reverse;
     animation-iteration-count: infinite;
                     
@@ -522,8 +521,6 @@ footer {
     justify-content: center;
     background-color:  #22334f;
     row-gap: 30px;
-
-
 }
 
     .foot_info{

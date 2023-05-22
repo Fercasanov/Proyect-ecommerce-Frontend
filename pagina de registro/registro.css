@@ -60,7 +60,7 @@ body{
         .redes{
             margin-left: 20px;
             margin-bottom: 10px;
-            background-color:#f7f6f9;
+            background-color: #f7f6f9;
             display: flex;
             flex-flow: row nowrap;
             justify-content:center;
@@ -142,7 +142,7 @@ body{
                         flex-flow: column nowrap;
                         row-gap: 30px;
                         justify-content: space-around;
-                        background-color: #f7f6f9;
+                        background-color: #fafafa;
                         position: absolute;
                         z-index: 1;
                         border: solid 2px  #22334f;
@@ -169,17 +169,17 @@ body{
     }
 
 
-    .formulario {
+    .usuario_registro {
+        margin: 20px;
         background-color: #22334f ;
         align-self: center;
         flex-basis: 30%;
         height: auto;
-        order: 2;
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: center;
-        gap: 10px;
+        gap: 30px;
         padding: 10px;
         border:#f7f6f9 solid 2px;
         border-radius: 5%;
@@ -187,7 +187,7 @@ body{
     }
 
         .titulo{
-
+            align-self: flex-start;
             text-align: center;
             font-family: 'Montserrat', sans-serif;
             font-size:xx-large;
@@ -218,70 +218,51 @@ body{
             margin-top: 5px;
         }
 
-        input.error, textarea.error {
+        input.error {
             border: 2px solid red;
             font-weight: 300;
             color: red;
         }
 
-            #consulta{
 
-                width: 250px;
-                height: 100px;
-            }
 
-        .localizacion{
+        .reg_sesion {
 
             display: flex;
             flex-flow: row nowrap;
-            justify-content: space-around;
-            column-gap: 20px;
+            align-items: center;
+            padding: 15px;
+            border-radius: 15%;
+            background-color:  #ffffff;
+
         }
 
-            .contacto{
+        .reg_sesion:hover{
 
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: space-around;
-                column-gap: 10px;
+            background-color: #b6cdf7;
+
+        }
+
+        .link_registro{
+
+            display: flex;
+            flex-flow: row nowrap;
+            align-self: flex-start;
+        }
+
+            .registro{
+                align-self: center;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                color: #ffffff;
+                font-size: small;
+
             }
 
+            .registro:hover{
 
-
-        .formulario button {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        gap:5px;
-        padding: 2px;
-        margin-bottom: 10px;
-        border: 2px solid #1f407d;
-        border-radius: 15%;
-        background-color: #f7f6f9;
-
-        }
-
-        .formulario button:hover{
-
-            background-color: #46e7b1;
-
-        }
-
-
-    .mapa{
-            order: 1;
-            background-color: #22334f ;
-            padding: 20px;
-        }
-        
-        
-            .mapa iframe{
-            width: 800px;
-            height: 500px;
-        
+                color:#b6cdf7
             }
-
-
 
 /* FOOTER */
 
