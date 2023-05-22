@@ -1,49 +1,6 @@
-// validacion de el formulario de inicio de sesion
 
-$(document).ready(function(){
+  // validacion del formulario de contacto, sesion y registro
 
-    $.validator.addMethod("password_validate", function(value, element){
-  
-      var pattern = /(?=(.*[0-9]))(?=.*[\!@#$%^&*()\\[\]{}\-_+=|:;"'<>,./?])(?=.*[a-z])(?=(.*[A-Z]))(?=(.*)).{8,}/;
-
-      return this.optional(element) || pattern.test(value);
-
-},"La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula, al menos una mayúscula y al menos un caracter no alfanumérico.");
-  
-  
-    $(".usuario_sesion").validate({
-      
-      submitHandler: function(form) {
-         
-          let data = $(form).serialize();
-  
-          alert(data);
-  
-          $('input[type="text"], input[type="email"], .form-control').val('');
-     
-      },
-  
-        rules: {
-
-          usuario:{required: true},
-          contraseña: {required: true, password_validate: true},
-
-        },
-  
-        messages: {
-
-          usuario:"Campo obligatorio",
-
-
-        }
-        
-    });
-  
-  });
-  
-  
-
-  // validacion del formulario de contacto
 
 $(document).ready(function(){
 
@@ -55,6 +12,14 @@ $(document).ready(function(){
   
   
     }, "El campo es obligatorio y de debe contener solamente letras");
+
+    $.validator.addMethod("password_validate", function(value, element){
+  
+      var pattern = /(?=(.*[0-9]))(?=.*[\!@#$%^&*()\\[\]{}\-_+=|:;"'<>,./?])(?=.*[a-z])(?=(.*[A-Z]))(?=(.*)).{8,}/;
+
+      return this.optional(element) || pattern.test(value);
+
+},"La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula, al menos una mayúscula y al menos un caracter no alfanumérico.");
   
   
     $(".formulario").validate({
@@ -86,7 +51,67 @@ $(document).ready(function(){
         }
         
     });
+
+
+    $(".usuario_sesion").validate({
+      
+      submitHandler: function(form) {
+         
+          let data = $(form).serialize();
   
+          alert(data);
+  
+          $('input[type="text"], input[type="email"], .form-control').val('');
+     
+      },
+  
+        rules: {
+
+          usuario:{required: true},
+          contraseña: {required: true, password_validate: true},
+
+        },
+  
+        messages: {
+
+          usuario:"Campo obligatorio",
+
+
+        }
+        
+    });
+
+    $(".usuario_registro").validate({
+      
+      submitHandler: function(form) {
+         
+          let data = $(form).serialize();
+  
+          alert(data);
+  
+          $('input[type="text"], input[type="email"], .form-control').val('');
+     
+      },
+  
+        rules: {
+          nombre: {required: true, formletter: true},
+          apellido: {required: true, formletter: true},
+          email: {required: true, email: true},
+          usuario:{required: true},
+          contraseña: {required: true, password_validate: true},
+
+        },
+  
+        messages: {
+
+          email: "El campo es obligatorio y debe tener formato de email correcto.",
+          usuario:"Campo obligatorio",
+
+        }
+        
+    });
+
+
   });
 
 
@@ -102,5 +127,11 @@ $(document).ready(function(){
     })
 
   })
-  
+
+
+
+
+
+
+
   
