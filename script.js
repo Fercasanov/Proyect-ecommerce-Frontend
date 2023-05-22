@@ -121,7 +121,6 @@ $(document).ready(function(){
 
     document.querySelector(".productos").addEventListener("click", function(){
 
-
       document.querySelector(".list_product").style.display="flex";
 
     })
