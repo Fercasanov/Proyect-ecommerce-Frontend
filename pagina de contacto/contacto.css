@@ -21,6 +21,7 @@ body{
     gap:10px;
     background-color: #ffffff;
     margin:5px;
+
 }
 
 /* Seccion 1 */     
@@ -59,7 +60,7 @@ body{
         .redes{
             margin-left: 20px;
             margin-bottom: 10px;
-            background-color: #f7f6f9;
+            background-color:#f7f6f9;
             display: flex;
             flex-flow: row nowrap;
             justify-content:center;
@@ -141,7 +142,7 @@ body{
                         flex-flow: column nowrap;
                         row-gap: 30px;
                         justify-content: space-around;
-                        background-color: #fafafa;
+                        background-color: #f7f6f9;
                         position: absolute;
                         z-index: 1;
                         border: solid 2px  #22334f;
@@ -157,282 +158,22 @@ body{
                  
                         }
 
-
-.ban_empresa{
-    background-image: url("C:/Users/User/Desktop/Git Hub-Repos/Proyect-ecommerce-Frontend/imagenes/ban_empresa1.jpeg") ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 280px;
-    animation-name: ban_empresa;
-    animation-duration: 10s;
-    animation-delay: 2s;
-    animation-direction: reverse;
-    animation-iteration-count: infinite;
-                    
-    }
-                    
-    @keyframes ban_empresa {
-                        
-        0% {
-                        
-            background-image: url("C:/Users/User/Desktop/Git Hub-Repos/Proyect-ecommerce-Frontend/imagenes/ban_empresa1.jpeg")
-                    }
-
-        30% {
-                        
-            background-image: url("C:/Users/User/Desktop/Git Hub-Repos/Proyect-ecommerce-Frontend/imagenes/ban_empresa1.jpeg")
-                    }
-
-                        
-        100%{
-                        
-            background-image: url("C:/Users/User/Desktop/Git Hub-Repos/Proyect-ecommerce-Frontend/imagenes/ban_empresa2.jpeg")
-                    }
-                                
-        }
-
-/* Seccion 2 */                  
 .secundaria{
 
-    display: flex;
-    flex-flow: column nowrap;
-    height: auto;
-    background-color: #22334f;
-    column-gap: 10px;
-
-}
-
-
-    .secu_content{
-        padding: 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
         margin: 10px;
-        height: auto;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content:space-between;
-        background-color:  #ffffff;
-    }
-
-        .novedades{
-            flex-basis: 40%;
-            align-self: center;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            row-gap: 20px;
-            background-color: #ffffff;
-            border-radius: 7%;
-            border: #22334f solid 6px;
-        }
-
-        .nov_titulo{
-            font-family: 'Montserrat', sans-serif;
-            font-weight:bold;
-            font-size:xx-large;
-            align-self: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            background-color:#ffffff;
-
-        }
-
-            .nov_sup, .nov_inf{
-                display: flex;
-                flex-flow: row nowrap;
-                margin: 10px 10px 20px 20px;
-                justify-content: space-around;
-                background-color:  #ffffff;
-            }
-
-            .novedad_1, .novedad_2, .novedad_3, .novedad_4{
-                flex-basis: 50%;
-                display: flex;
-                flex-flow: column nowrap;
-                row-gap: 5px;
-                background-color:  #ffffff;
-                justify-content:flex-start;
-                align-content: flex-start;
-        
-            }
-
-            .tipo_product{
-                align-self: center;
-                font-family: 'Montserrat', sans-serif;
-                font-weight:bold;
-                font-size:small;
-        
-        
-            }
-
-            .nom_product{
-                align-self: center;
-                font-family: 'Montserrat', sans-serif;
-                font-weight:bold;
-                font-size:large;
-        
-            }
-
-            .nov_prote{
-                align-self: center;
-                padding: 100px;
- 
-                background-image: url("C:/Users/User/Desktop/Git Hub-Repos/Proyect-ecommerce-Frontend/imagenes/proteina.jpg");
-                background-repeat: no-repeat;
-                background-size:contain;
-                background-position:center;
-                transition: 1.5s ease;
-                -webkit-transition: 1.5s ease;
-            }
-
-            .nov_prote:hover{
-                transform : scale(1.05);
-                -webkit-transform : scale(1.05);
-            }
-
-
-            
-            .nov_amino {
-                align-self: center;
-                padding: 100px;
-    
-                background-image: url("C:/Users/User/Desktop/Git Hub-Repos/Proyect-ecommerce-Frontend/imagenes/amino.jpg");
-                background-repeat: no-repeat;
-                background-size:contain;
-                background-position:center;
-                transition: 1.5s ease;
-                -webkit-transition: 1.5s ease;
-            }
-
-            .nov_amino:hover{
-                transform : scale(1.05);
-                -webkit-transform : scale(1.05);
-            }
-
-            
-            .nov_gainer {
-                align-self: center;
-                padding: 100px;
-                background-color:  #ebfbf3;
-                background-image: url("C:/Users/User/Desktop/Git Hub-Repos/Proyect-ecommerce-Frontend/imagenes/gainer.jpg");
-                background-repeat: no-repeat;
-                background-size:contain;
-                background-position:center;
-                transition: 1.5s ease;
-                -webkit-transition: 1.5s ease;
-            }
-
-            .nov_gainer:hover{
-                transform : scale(1.05);
-                -webkit-transform : scale(1.05);
-            }
-            
-            .nov_creatina{
-                align-self: center;
-                padding: 100px;
-                background-image: url("C:/Users/User/Desktop/Git Hub-Repos/Proyect-ecommerce-Frontend/imagenes/creatina.jpg");
-                background-repeat: no-repeat;
-                background-size:contain;
-                background-position:center;
-                transition: 1.5s ease;
-                -webkit-transition: 1.5s ease;
-            }
-
-            .nov_creatina:hover{
-                transform : scale(1.05);
-                -webkit-transform : scale(1.05);
-            }
-
-
-
-
-        .banerlat_iz{
-            flex-basis: 20%;
-       
-            background-image: url("C:/Users/User/Desktop/Git Hub-Repos/Proyect-ecommerce-Frontend/imagenes/banner1.jpg");
-            background-repeat: no-repeat;
-            background-size:contain;
-            background-color:   #ffffff;
-            background-position: center;
-            align-self: stretch;
-
-        }
-
-        .banerlat_der{
-            flex-basis: 20%;
-      
-            background-color:   #ffffff;
-            background-image: url("C:/Users/User/Desktop/Git Hub-Repos/Proyect-ecommerce-Frontend/imagenes/banner2.jpg");
-            background-repeat: no-repeat;
-            background-size:contain;
-            background-position: center;
-            align-self: stretch;
-            
-        }
-
-
-
-/* Seccion 3 */
-
-
-.tercera{
-
-    display:none;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-content: center;
-    row-gap: 20px;
-    background-color: #c5fae8;
-
-}
-    .infocontacto{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-    }
-
-    .contactanos{
-        
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        text-align: center;
-        row-gap: 10px;
-    }
-
-    .icon{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        row-gap: 10px;
-        size: 5px;
-
-    }
-    .redesfooter{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-    }
-    .copyright{
-        align-self: center;
-    }
-
-
-    /* Seccion 4 */
-
-.cuarta{
-
-        display: none;
-        flex-flow: row nowrap;
-        justify-content: center;
-        gap: 20px;
-        align-content: stretch;
-        background-color:  #8bebc9;;
+        align-content: baseline;
+        background-color:  #22334f;
     }
 
 
     .formulario {
-        background-color: #ebfbf3;
-        align-self: flex-start;
+        margin: 5px;
+        background-color: #22334f ;
+        align-self: center;
+        flex-basis: 30%;
         height: auto;
         order: 2;
         display: flex;
@@ -440,8 +181,20 @@ body{
         justify-content: flex-start;
         align-items: center;
         gap: 10px;
+        padding: 10px;
+        border:#f7f6f9 solid 2px;
+        border-radius: 5%;
 
     }
+
+        .titulo{
+
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size:xx-large;
+            color: #f7f6f9;
+
+        }
 
         .formulario h1{
             text-align: center;
@@ -462,11 +215,12 @@ body{
         label.error {
             color: red;
             font-size: 1rem;
-            display: block;
-            margin-top: 5px;
+            display: relative;
+
         }
 
         input.error, textarea.error {
+            display: relative;
             border: 2px solid red;
             font-weight: 300;
             color: red;
@@ -478,6 +232,24 @@ body{
                 height: 100px;
             }
 
+        .localizacion{
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            column-gap: 20px;
+        }
+
+            .contacto{
+
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                column-gap: 10px;
+            }
+
+
+
         .formulario button {
         display: flex;
         flex-flow: row nowrap;
@@ -487,7 +259,7 @@ body{
         margin-bottom: 10px;
         border: 2px solid #1f407d;
         border-radius: 15%;
-        background-color: #d7fff2;
+        background-color: #f7f6f9;
 
         }
 
@@ -500,13 +272,14 @@ body{
 
     .mapa{
             order: 1;
-            background-color: #8bebc9;
+            background-color: #22334f ;
+            padding: 20px;
         }
         
         
             .mapa iframe{
             width: 800px;
-            height: 400px;
+            height: 500px;
         
             }
 
@@ -521,6 +294,8 @@ footer {
     justify-content: center;
     background-color:  #22334f;
     row-gap: 30px;
+
+
 }
 
     .foot_info{
@@ -543,7 +318,7 @@ footer {
         }
 
             .foot_titulo{
-                color: #f7f6f9;
+                color:#f7f6f9;
                 text-align: center;
                 font-family: 'Montserrat', sans-serif;
                 font-size:larger;
@@ -559,9 +334,9 @@ footer {
 
 
 
-                h5{
+                h3, h5{
 
-                    color: #f7f6f9;
+                    color:#f7f6f9;
                     text-align: center;
                     font-family: 'Montserrat', sans-serif; ;
 
@@ -588,7 +363,7 @@ footer {
     
    
     .formulario {
-            background-color: #ebfbf3;
+            background-color: #f7f6f9;
             align-self: center;
             flex-grow: 1;
             margin: 10px;
@@ -687,7 +462,6 @@ footer {
 
 
     }
-
 
 
 
