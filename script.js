@@ -125,6 +125,13 @@ $(document).ready(function(){
 
     })
 
+    document.querySelector(".productos").addEventListener("mouseout", function(){
+
+      document.querySelector(".list_product").style.display="none";
+
+    })
+
+
   })
 
 
