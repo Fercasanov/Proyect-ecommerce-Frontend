@@ -49,7 +49,7 @@ body{
             padding: 100px;
             margin-left: 30px;
             background-color: #46e7b1;
-            background-image: url("C:/Users/User/Desktop/Git Hub-Repos/Proyect-ecommerce-Frontend/imagenes/logo2.jpeg");
+            background-image: url(imagenes/logo2.jpeg);
             background-repeat: no-repeat;
             background-size:contain;
             background-position:center;
@@ -169,7 +169,7 @@ body{
     }
 
 
-    .usuario_registro {
+    .usuario_sesion {
         margin: 20px;
         background-color: #22334f ;
         align-self: center;
@@ -226,18 +226,18 @@ body{
 
 
 
-        .reg_sesion {
+        .button_sesion {
 
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
-            padding: 15px;
+            padding: 9px 15px 9px 15px;
             border-radius: 15%;
             background-color:  #ffffff;
 
         }
 
-        .reg_sesion:hover{
+        .button_sesion:hover{
 
             background-color: #b6cdf7;
 
@@ -247,7 +247,14 @@ body{
 
             display: flex;
             flex-flow: row nowrap;
-            align-self: flex-start;
+            padding: 10px;
+            border: #ffffff solid 2px;
+        }
+
+        .link_registro:hover{
+
+            background-color: #b6cdf7;
+
         }
 
             .registro{
@@ -259,10 +266,12 @@ body{
 
             }
 
-            .registro:hover{
+            #flecha{
 
-                color:#b6cdf7
+                color: #ffffff;
+                align-self: center;
             }
+
 
 /* FOOTER */
 

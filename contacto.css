@@ -49,7 +49,7 @@ body{
             padding: 100px;
             margin-left: 30px;
             background-color: #46e7b1;
-            background-image: url("C:/Users/User/Desktop/Git Hub-Repos/Proyect-ecommerce-Frontend/imagenes/logo2.jpeg");
+            background-image: url(imagenes/logo2.jpeg);
             background-repeat: no-repeat;
             background-size:contain;
             background-position:center;
@@ -60,7 +60,7 @@ body{
         .redes{
             margin-left: 20px;
             margin-bottom: 10px;
-            background-color: #f7f6f9;
+            background-color:#f7f6f9;
             display: flex;
             flex-flow: row nowrap;
             justify-content:center;
@@ -142,7 +142,7 @@ body{
                         flex-flow: column nowrap;
                         row-gap: 30px;
                         justify-content: space-around;
-                        background-color: #fafafa;
+                        background-color: #f7f6f9;
                         position: absolute;
                         z-index: 1;
                         border: solid 2px  #22334f;
@@ -169,17 +169,18 @@ body{
     }
 
 
-    .usuario_sesion {
-        margin: 20px;
+    .formulario {
+        margin: 5px;
         background-color: #22334f ;
         align-self: center;
         flex-basis: 30%;
         height: auto;
+        order: 2;
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: center;
-        gap: 30px;
+        gap: 10px;
         padding: 10px;
         border:#f7f6f9 solid 2px;
         border-radius: 5%;
@@ -187,7 +188,7 @@ body{
     }
 
         .titulo{
-            align-self: flex-start;
+
             text-align: center;
             font-family: 'Montserrat', sans-serif;
             font-size:xx-large;
@@ -214,63 +215,74 @@ body{
         label.error {
             color: red;
             font-size: 1rem;
-            display: block;
-            margin-top: 5px;
+            display: relative;
+
         }
 
-        input.error {
+        input.error, textarea.error {
+            display: relative;
             border: 2px solid red;
             font-weight: 300;
             color: red;
         }
 
+            #consulta{
 
+                width: 250px;
+                height: 100px;
+            }
 
-        .button_sesion {
+        .localizacion{
 
             display: flex;
             flex-flow: row nowrap;
-            align-items: center;
-            padding: 9px 15px 9px 15px;
-            border-radius: 15%;
-            background-color:  #ffffff;
-
+            justify-content: space-around;
+            column-gap: 20px;
         }
 
-        .button_sesion:hover{
+            .contacto{
 
-            background-color: #b6cdf7;
-
-        }
-
-        .link_registro{
-
-            display: flex;
-            flex-flow: row nowrap;
-            padding: 10px;
-            border: #ffffff solid 2px;
-        }
-
-        .link_registro:hover{
-
-            background-color: #b6cdf7;
-
-        }
-
-            .registro{
-                align-self: center;
-                text-align: center;
-                font-family: 'Montserrat', sans-serif;
-                color: #ffffff;
-                font-size: small;
-
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                column-gap: 10px;
             }
 
-            #flecha{
 
-                color: #ffffff;
-                align-self: center;
+
+        .formulario button {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap:5px;
+        padding: 2px;
+        margin-bottom: 10px;
+        border: 2px solid #1f407d;
+        border-radius: 15%;
+        background-color: #f7f6f9;
+
+        }
+
+        .formulario button:hover{
+
+            background-color: #46e7b1;
+
+        }
+
+
+    .mapa{
+            order: 1;
+            background-color: #22334f ;
+            padding: 20px;
+        }
+        
+        
+            .mapa iframe{
+            width: 800px;
+            height: 500px;
+        
             }
+
 
 
 /* FOOTER */
