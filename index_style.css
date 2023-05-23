@@ -180,13 +180,13 @@ body{
 
         30% {
                         
-            background-image: url(ban_empresa1.jpeg);
+            background-image: url(imagenes/ban_empresa1.jpeg);
                     }
 
                         
         100%{
                         
-            background-image: url(ban_empresa2.jpeg);
+            background-image: url(imagenes/ban_empresa2.jpeg);
                     }
                                 
         }
@@ -359,7 +359,6 @@ body{
 
         .banerlat_der{
             flex-basis: 20%;
-      
             background-color:   #ffffff;
             background-image: url(imagenes/banner2.jpg);
             background-repeat: no-repeat;
