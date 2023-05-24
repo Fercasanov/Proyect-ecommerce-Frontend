@@ -67,7 +67,7 @@ body{
 
         }
 
-    nav {
+    .navegacion {
         margin: 0px 10px 10px 10px;
         display: flex;
         flex-flow: row nowrap;
@@ -159,10 +159,12 @@ body{
 
 
 .ban_empresa{
+    height: auto;
     background-image: url(imagenes/ban_empresa1.jpeg);
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    padding: 280px;
+    padding: 300px 0px 240px 0px;
     animation-name: ban_empresa;
     animation-duration: 10s;
     animation-delay: 2s;
@@ -180,13 +182,13 @@ body{
 
         30% {
                         
-            background-image: url(ban_empresa1.jpeg);
+            background-image: url(imagenes/ban_empresa1.jpeg);
                     }
 
                         
         100%{
                         
-            background-image: url(ban_empresa2.jpeg);
+            background-image: url(imagenes/ban_empresa2.jpeg);
                     }
                                 
         }
@@ -347,7 +349,6 @@ body{
 
         .banerlat_iz{
             flex-basis: 20%;
-       
             background-image: url(imagenes/banner1.jpg);
             background-repeat: no-repeat;
             background-size:contain;
@@ -359,7 +360,6 @@ body{
 
         .banerlat_der{
             flex-basis: 20%;
-      
             background-color:   #ffffff;
             background-image: url(imagenes/banner2.jpg);
             background-repeat: no-repeat;
@@ -582,113 +582,219 @@ footer {
 
     }
 
-    
 
-@media (min-width: 768px) and (max-width: 1210px){
-    
-   
-    .formulario {
-            background-color: #ebfbf3;
-            align-self: center;
-            flex-grow: 1;
-            margin: 10px;
-            height: auto;
-            order: 2;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
+@media (min-width:1280px) and (max-width:1600px){
 
-        }
+    .ban_empresa{
 
-        .localizacion{
-
-            flex-direction: row;
-        }
-
-    .mapa iframe{
-        width: 700px;
-        height: 500px;
-        margin:5px
-            
-            }
-}
-
-
-@media (min-width:320px) and (max-width: 768px){
-
-    nav ul{
-
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin:10px;
-   
+        display: none;
+    }
     }
 
-        #buscador{
-            width: 200px;
-        }
+    .nom_product{
 
-
-        nav ul li{
-
-            padding-top: 10px ;
-
-            padding-bottom: 10px ;
-        }
-
-
-    .secundaria{
-
-        flex-flow: column nowrap;
+        text-align: center;
     }
 
-        .infoempresa {
-            display: none;
-        }
+   .secu_content{
+    justify-content: space-around;
+    column-gap: 5px;
 
-   
-
-    .formulario {
-            background-color: #ebfbf3;
-            align-self: center;
-            height: auto;
-            order: 2;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-
-        }
+   }
+    .banerlat_der, .banerlat_iz, .novedades{
+        flex-basis: 33,33%;
+ 
+    }
 
 
-    .localizacion{
 
-            flex-direction: column;
-        }
-        
 
-    .mapa iframe{
-        width: 250px;
-        height: 250px;
-        margin:0px
-            
-            }
-}
 
-    .micuenta{
-        flex-direction: column;
+@media (min-width:600px) and (max-width:1280px){
+
+    .ban_empresa{
+
+        display: none;
+    }
+    
+    .nav_info{
+       
+        flex-flow: row nowrap;
+        align-items: center;
         justify-content: center;
+        column-gap: 2px;
+    }
+
+
+    .secu_content{
+
+        justify-content: space-around;
+        column-gap: 10px;
+    }
+
+  
+    .novedades{
+        align-self: center;
+        flex-basis: 60%;
+        border-radius: 0%;
+        border: #22334f 5px solid;
+        
+    }
+
+    .nom_product{
+
+        text-align: center;
+    }
+
+    .banerlat_der, .banerlat_iz{
+
+        display: none;
+    }
+
+
+    .foot_info{
+
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        column-gap: 5px;
+    }
+
+
+}   
+
+@media (min-width:450px) and (max-width:600px){
+
+    .ban_empresa{
+
+        display: none;
+    }
+
+
+
+    .navegacion{
+
+        padding: 10px;
+    }
+
+    .nav_info{
+       
+        flex-flow: column nowrap;
         align-items: flex-start;
-        row-gap: 10 px;
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    .nav_categoria, .productos{
+        padding: 20px;
+    }
+
+   
+    .banerlat_der, .banerlat_iz{
+
+        display: none;
+    }
+
+    .novedades{
+
+        align-self: center;
+        flex-basis: 100%;
+        border-radius: 0%;
+    }
+    .nov_sup, .nov_inf{
+
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin: 0px;
+        row-gap: 20px;
+
+    }
+
+    .foot_info{
+
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+        row-gap: 40px;
+    }
+
+}
+
+@media (min-width:280px) and (max-width:450px){
+
+    .ban_empresa{
+
+        display: none;
+    }
+    .navegacion{
+
+        padding: 10px;
+    }
+    .nav_info{
+       
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        row-gap: 20px;
+        border: 1px solid  #22334f;;
+
+    }
+
+    .nav_categoria, .productos{
+        padding: 20px;
+    }
+
+    .secu_content{
+
+        justify-content: center;
+ 
+    }
 
 
+    .novedades{
+        align-self: center;
+        flex-flow: column wrap;
+        justify-content: center;
+        border: 5px solid #22334f;
+        border-radius: 0%;
+        row-gap:10px;
+
+    }
+
+        .nov_titulo{
+
+            text-align: center;
+            font-size: x-large;
+        }
+
+    .nov_sup, .nov_inf{
+
+        flex-flow: column nowrap;
+        justify-content: center;
+        row-gap:30px;
+
+
+    }
+
+        .nom_product{
+
+            text-align: center;
+        }
+
+    .banerlat_der, .banerlat_iz{
+
+        display: none;
+    }
+
+
+    .foot_info{
+
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+        row-gap: 40px;
     }
 
 
 
 
-
+}
