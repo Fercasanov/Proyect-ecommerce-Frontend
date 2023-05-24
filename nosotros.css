@@ -17,7 +17,7 @@ body{
 
     display:flex;
     flex-flow: column nowrap;
-    align-content: space-evenly;
+    align-content: space-between;
     gap:10px;
     background-color: #ffffff;
     margin:5px;

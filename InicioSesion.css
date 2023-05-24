@@ -275,6 +275,7 @@ body{
 
 /* FOOTER */
 
+
 footer {
 
     display: flex;
@@ -282,18 +283,22 @@ footer {
     justify-content: center;
     background-color:  #22334f;
     row-gap: 30px;
-
-
 }
 
     .foot_info{
         padding: 20px;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items:  baseline;
 
     }
+
+        .cuenta_info, .nosotros_info, .contact_info{
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 20px;
+        }
 
 
         .link_info{
@@ -301,12 +306,11 @@ footer {
             flex-flow: column nowrap;
             justify-content: center;
             background-color:  #22334f;
-            gap:20px;
-    
+            row-gap: 10px;
         }
 
             .foot_titulo{
-                color:#f7f6f9;
+                color: #f7f6f9;
                 text-align: center;
                 font-family: 'Montserrat', sans-serif;
                 font-size:larger;
@@ -316,15 +320,14 @@ footer {
             .link_contacto{
                 display: flex;
                 flex-flow: row nowrap;
+                align-items: center;
+                background-color:#22334f;
                 column-gap: 10px;
             }
 
+                h5{
 
-
-
-                h3, h5{
-
-                    color:#f7f6f9;
+                    color: #f7f6f9;
                     text-align: center;
                     font-family: 'Montserrat', sans-serif; ;
 
@@ -344,113 +347,3 @@ footer {
         font-family: 'Montserrat', sans-serif; ;
 
     }
-
-    
-
-@media (min-width: 768px) and (max-width: 1210px){
-    
-   
-    .formulario {
-            background-color: #f7f6f9;
-            align-self: center;
-            flex-grow: 1;
-            margin: 10px;
-            height: auto;
-            order: 2;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-
-        }
-
-        .localizacion{
-
-            flex-direction: row;
-        }
-
-    .mapa iframe{
-        width: 700px;
-        height: 500px;
-        margin:5px
-            
-            }
-}
-
-
-@media (min-width:320px) and (max-width: 768px){
-
-    nav ul{
-
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin:10px;
-   
-    }
-
-        #buscador{
-            width: 200px;
-        }
-
-
-        nav ul li{
-
-            padding-top: 10px ;
-
-            padding-bottom: 10px ;
-        }
-
-
-    .secundaria{
-
-        flex-flow: column nowrap;
-    }
-
-        .infoempresa {
-            display: none;
-        }
-
-   
-
-    .formulario {
-            background-color: #ebfbf3;
-            align-self: center;
-            height: auto;
-            order: 2;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-
-        }
-
-
-    .localizacion{
-
-            flex-direction: column;
-        }
-        
-
-    .mapa iframe{
-        width: 250px;
-        height: 250px;
-        margin:0px
-            
-            }
-}
-
-    .micuenta{
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        row-gap: 10 px;
-
-
-    }
-
-
-
-
