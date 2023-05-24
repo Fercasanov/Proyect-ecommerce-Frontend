@@ -1,0 +1,804 @@
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    list-style: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+body{
+
+    background-image: #ffffff;
+}
+
+.conteiner{
+
+    display:flex;
+    flex-flow: column nowrap;
+    align-content: space-evenly;
+    gap:10px;
+    background-color: #ffffff;
+    margin:5px;
+}
+
+/* Seccion 1 */     
+
+.principal{
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    background-color: #22334f;
+
+}
+
+    header {
+        display: flex;
+        margin:10px;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f6f9;
+
+    }
+
+        .logo{
+            padding: 100px;
+            margin-left: 30px;
+            background-color: #46e7b1;
+            background-image: url(imagenes/logo2.jpeg);
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-position:center;
+            background-color:   #ebfbf3 
+
+        } 
+
+        .redes{
+            margin-left: 20px;
+            margin-bottom: 10px;
+            background-color: #f7f6f9;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content:center;
+            gap: 20px;
+
+        }
+
+    .navegacion {
+        margin: 0px 10px 10px 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        background-color: #f7f6f9;
+    }
+
+       .nav_info{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            column-gap: 30px;
+            padding: 20px;
+        
+        }
+
+            .ul_categoria{
+
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                font-size:medium;
+                text-align: center;
+                color: #000000;
+
+            }
+
+                .nav_categoria{
+
+                    display: flex;
+                    flex-direction: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 10px;
+                    padding: 10px;
+
+                }
+
+                .nav_categoria:hover{
+
+                    background-color:#46e7b1;
+                    border-radius: 10%;
+                }
+
+                .productos{
+
+                display: flex;
+                flex-flow: column nowrap;
+                gap: 10px;
+
+                }
+
+
+                    .log_prod{
+
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                        align-items: center;
+                        column-gap: 10px;
+                        font-size: medium;
+                        font-family: 'Roboto Slab', serif;
+                        font-weight: bold;
+                    }
+
+                        
+                    .list_product{
+                        margin-top: 25px;
+                        padding: 10px;
+                        display:none;
+                        flex-flow: column nowrap;
+                        row-gap: 30px;
+                        justify-content: space-around;
+                        background-color: #fafafa;
+                        position: absolute;
+                        z-index: 1;
+                        border: solid 2px  #22334f;
+
+
+                    }
+
+                        .product{
+
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight:bold;
+                            font-size:small;
+                 
+                        }
+
+
+.ban_empresa{
+    height: auto;
+    background-image: url(imagenes/ban_empresa1.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 300px 0px 240px 0px;
+    animation-name: ban_empresa;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+                    
+    }
+                    
+    @keyframes ban_empresa {
+                        
+        0% {
+                        
+            background-image: url(imagenes/ban_empresa1.jpeg);
+                    }
+
+        30% {
+                        
+            background-image: url(imagenes/ban_empresa1.jpeg);
+                    }
+
+                        
+        100%{
+                        
+            background-image: url(imagenes/ban_empresa2.jpeg);
+                    }
+                                
+        }
+
+/* Seccion 2 */                  
+.secundaria{
+
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+    background-color: #22334f;
+    column-gap: 10px;
+
+}
+
+
+    .secu_content{
+        padding: 10px;
+        margin: 10px;
+        height: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content:space-between;
+        background-color:  #ffffff;
+    }
+
+        .novedades{
+            flex-basis: 40%;
+            align-self: center;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            row-gap: 20px;
+            background-color: #ffffff;
+            border-radius: 7%;
+            border: #22334f solid 6px;
+        }
+
+        .nov_titulo{
+            font-family: 'Montserrat', sans-serif;
+            font-weight:bold;
+            font-size:xx-large;
+            align-self: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color:#ffffff;
+
+        }
+
+            .nov_sup, .nov_inf{
+                display: flex;
+                flex-flow: row nowrap;
+                margin: 10px 10px 20px 20px;
+                justify-content: space-around;
+                background-color:  #ffffff;
+            }
+
+            .novedad_1, .novedad_2, .novedad_3, .novedad_4{
+                flex-basis: 50%;
+                display: flex;
+                flex-flow: column nowrap;
+                row-gap: 5px;
+                background-color:  #ffffff;
+                justify-content:flex-start;
+                align-content: flex-start;
+        
+            }
+
+            .tipo_product{
+                align-self: center;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                font-size:small;
+        
+        
+            }
+
+            .nom_product{
+                align-self: center;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                font-size:large;
+        
+            }
+
+            .nov_prote{
+                align-self: center;
+                padding: 100px;
+ 
+                background-image: url(imagenes/proteina.jpg);
+                background-repeat: no-repeat;
+                background-size:contain;
+                background-position:center;
+                transition: 1.5s ease;
+                -webkit-transition: 1.5s ease;
+            }
+
+            .nov_prote:hover{
+                transform : scale(1.05);
+                -webkit-transform : scale(1.05);
+            }
+
+
+            
+            .nov_amino {
+                align-self: center;
+                padding: 100px;
+    
+                background-image: url(imagenes/amino.jpg);
+                background-repeat: no-repeat;
+                background-size:contain;
+                background-position:center;
+                transition: 1.5s ease;
+                -webkit-transition: 1.5s ease;
+            }
+
+            .nov_amino:hover{
+                transform : scale(1.05);
+                -webkit-transform : scale(1.05);
+            }
+
+            
+            .nov_gainer {
+                align-self: center;
+                padding: 100px;
+                background-color:  #ebfbf3;
+                background-image: url(imagenes/gainer.jpg);
+                background-repeat: no-repeat;
+                background-size:contain;
+                background-position:center;
+                transition: 1.5s ease;
+                -webkit-transition: 1.5s ease;
+            }
+
+            .nov_gainer:hover{
+                transform : scale(1.05);
+                -webkit-transform : scale(1.05);
+            }
+            
+            .nov_creatina{
+                align-self: center;
+                padding: 100px;
+                background-image: url(imagenes/creatina.jpg);
+                background-repeat: no-repeat;
+                background-size:contain;
+                background-position:center;
+                transition: 1.5s ease;
+                -webkit-transition: 1.5s ease;
+            }
+
+            .nov_creatina:hover{
+                transform : scale(1.05);
+                -webkit-transform : scale(1.05);
+            }
+
+
+
+
+        .banerlat_iz{
+            flex-basis: 20%;
+            background-image: url(imagenes/banner1.jpg);
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-color:   #ffffff;
+            background-position: center;
+            align-self: stretch;
+
+        }
+
+        .banerlat_der{
+            flex-basis: 20%;
+            background-color:   #ffffff;
+            background-image: url(imagenes/banner2.jpg);
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-position: center;
+            align-self: stretch;
+            
+        }
+
+
+
+/* Seccion 3 */
+
+
+.tercera{
+
+    display:none;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    row-gap: 20px;
+    background-color: #c5fae8;
+
+}
+    .infocontacto{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    .contactanos{
+        
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        text-align: center;
+        row-gap: 10px;
+    }
+
+    .icon{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        row-gap: 10px;
+        size: 5px;
+
+    }
+    .redesfooter{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    .copyright{
+        align-self: center;
+    }
+
+
+    /* Seccion 4 */
+
+.cuarta{
+
+        display: none;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 20px;
+        align-content: stretch;
+        background-color:  #8bebc9;;
+    }
+
+
+    .formulario {
+        background-color: #ebfbf3;
+        align-self: flex-start;
+        height: auto;
+        order: 2;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+        .formulario h1{
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 10px;
+        }
+
+        .formulario input{
+
+            margin:10px;
+            padding-left:5px;
+            padding-top:0.5px;
+            padding-bottom:0.5px;
+
+        }
+        
+
+        label.error {
+            color: red;
+            font-size: 1rem;
+            display: block;
+            margin-top: 5px;
+        }
+
+        input.error, textarea.error {
+            border: 2px solid red;
+            font-weight: 300;
+            color: red;
+        }
+
+            #consulta{
+
+                width: 250px;
+                height: 100px;
+            }
+
+        .formulario button {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap:5px;
+        padding: 2px;
+        margin-bottom: 10px;
+        border: 2px solid #1f407d;
+        border-radius: 15%;
+        background-color: #d7fff2;
+
+        }
+
+        .formulario button:hover{
+
+            background-color: #46e7b1;
+
+        }
+
+
+    .mapa{
+            order: 1;
+            background-color: #8bebc9;
+        }
+        
+        
+            .mapa iframe{
+            width: 800px;
+            height: 400px;
+        
+            }
+
+
+
+/* FOOTER */
+
+footer {
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color:  #22334f;
+    row-gap: 30px;
+}
+
+    .foot_info{
+        padding: 20px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items:  baseline;
+
+    }
+
+        .cuenta_info, .nosotros_info, .contact_info{
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 20px;
+        }
+
+
+        .link_info{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            background-color:  #22334f;
+            row-gap: 10px;
+        }
+
+            .foot_titulo{
+                color: #f7f6f9;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                font-size:larger;
+                align-self: flex-start;
+            }
+
+            .link_contacto{
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                background-color:#22334f;
+                column-gap: 10px;
+            }
+
+                h5{
+
+                    color: #f7f6f9;
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif; ;
+
+                }
+
+                #contacto_simbolo{
+
+                    color: #f7f6f9;
+                }
+
+            
+
+    .copy{
+        align-self:baseline;
+        color: #f7f6f9;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif; ;
+
+    }
+
+
+@media (min-width:1280px) and (max-width:1600px){
+
+    .ban_empresa{
+
+        display: none;
+    }
+    }
+
+    .nom_product{
+
+        text-align: center;
+    }
+
+   .secu_content{
+    justify-content: space-around;
+    column-gap: 5px;
+
+   }
+    .banerlat_der, .banerlat_iz, .novedades{
+        flex-basis: 33,33%;
+ 
+    }
+
+
+
+
+
+@media (min-width:600px) and (max-width:1280px){
+
+    .ban_empresa{
+
+        display: none;
+    }
+    
+    .nav_info{
+       
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        column-gap: 2px;
+    }
+
+
+    .secu_content{
+
+        justify-content: space-around;
+        column-gap: 10px;
+    }
+
+  
+    .novedades{
+        align-self: center;
+        flex-basis: 60%;
+        border-radius: 0%;
+        border: #22334f 5px solid;
+        
+    }
+
+    .nom_product{
+
+        text-align: center;
+    }
+
+    .banerlat_der, .banerlat_iz{
+
+        display: none;
+    }
+
+
+    .foot_info{
+
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        column-gap: 5px;
+    }
+
+
+}   
+
+@media (min-width:450px) and (max-width:600px){
+
+    .ban_empresa{
+
+        display: none;
+    }
+
+
+
+    .navegacion{
+
+        padding: 10px;
+    }
+
+    .nav_info{
+       
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    .nav_categoria, .productos{
+        padding: 20px;
+    }
+
+   
+    .banerlat_der, .banerlat_iz{
+
+        display: none;
+    }
+
+    .novedades{
+
+        align-self: center;
+        flex-basis: 100%;
+        border-radius: 0%;
+    }
+    .nov_sup, .nov_inf{
+
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin: 0px;
+        row-gap: 20px;
+
+    }
+
+    .foot_info{
+
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+        row-gap: 40px;
+    }
+
+}
+
+@media (min-width:280px) and (max-width:450px){
+
+    .ban_empresa{
+
+        display: none;
+    }
+    .navegacion{
+
+        padding: 10px;
+    }
+    .nav_info{
+       
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        row-gap: 20px;
+        border: 1px solid  #22334f;;
+
+    }
+
+    .nav_categoria, .productos{
+        padding: 20px;
+    }
+
+    .secu_content{
+
+        justify-content: center;
+ 
+    }
+
+
+    .novedades{
+        align-self: center;
+        flex-flow: column wrap;
+        justify-content: center;
+        border: 5px solid #22334f;
+        border-radius: 0%;
+        row-gap:10px;
+
+    }
+
+        .nov_titulo{
+
+            text-align: center;
+            font-size: x-large;
+        }
+
+    .nov_sup, .nov_inf{
+
+        flex-flow: column nowrap;
+        justify-content: center;
+        row-gap:30px;
+
+
+    }
+
+        .nom_product{
+
+            text-align: center;
+        }
+
+    .banerlat_der, .banerlat_iz{
+
+        display: none;
+    }
+
+
+    .foot_info{
+
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+        row-gap: 40px;
+    }
+
+
+
+
+}
