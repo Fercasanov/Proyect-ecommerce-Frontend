@@ -527,10 +527,16 @@ footer {
         padding: 20px;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items:  baseline;
 
     }
+
+        .cuenta_info, .nosotros_info, .contact_info{
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 20px;
+        }
 
 
         .link_info{
@@ -538,8 +544,7 @@ footer {
             flex-flow: column nowrap;
             justify-content: center;
             background-color:  #22334f;
-            gap:20px;
-    
+            row-gap: 10px;
         }
 
             .foot_titulo{
@@ -553,11 +558,10 @@ footer {
             .link_contacto{
                 display: flex;
                 flex-flow: row nowrap;
+                align-items: center;
+                background-color:#22334f;
                 column-gap: 10px;
             }
-
-
-
 
                 h5{
 
