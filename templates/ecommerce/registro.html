@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="registro.css">
+    <link rel="stylesheet" type="text/css" href="static/css/registro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=Roboto+Slab&display=swap rel="stylesheet">
@@ -75,15 +75,15 @@
 
         <section class = "secundaria ">
 
-                <form class="usuario_registro" action="mailto:fernando.casanova1992@outlook.com" method="get">
+                <form class="usuario_registro" action="/store" method="post" enctype="multipart/form-data">
 
-                    <a class="link_registro" href="iniciosesion.html"><h4 class="registro">¿ Tiene una cuenta ? Inicie Sesión </h4></a>
+                    <a class="link_registro" href="{{url_for('loggin')}}"><h4 class="registro">¿ Tiene una cuenta ? Inicie Sesión </h4></a>
                     <h1 class="titulo">Crear una cuenta</h1>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" size="30" >
-                    <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" size="30" >
-                    <input type="text" name="mail" id="mail" placeholder="Ingresa tu email" size="30" >
-                    <input type="text" name="usuario" id="usuario" placeholder="Ingresa una nombre de usuario" size="30" >
-                    <input type="password" name="contraseña" id="password" placeholder="Ingresa una contraseña" size="30">
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" size="30" required >
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" size="30" required >
+                    <input type="text" name="mail" id="mail" placeholder="Ingresa tu email" size="30" required >
+                    <input type="text" name="usuario" id="usuario" placeholder="Ingresa una nombre de usuario" size="30" required >
+                    <input type="password" name="contraseña" id="password" placeholder="Ingresa una contraseña" size="30" required>
                     <button class="reg_sesion" type="submit"><h4>Guardar</h4></button>
                </form>
 
@@ -98,7 +98,7 @@
 
                         <h4 class="foot_titulo">Mi Cuenta</h4>
                         <ul class="link_info">
-                            <li ><a class="link_contacto" href="iniciosesion.html"><h5>Iniciar Sesión</h5></a></li>
+                            <li ><a class="link_contacto" href="{{url_for('loggin')}}"><h5>Iniciar Sesión</h5></a></li>
                             <li > <a class="link_contacto" href="#"><h5>Mis Pedidos</h5></a></li>
                             <li ><a class="link_contacto" href="#"><h5>Datos Personales</h5></a></li>
                 

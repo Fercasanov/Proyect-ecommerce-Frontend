@@ -54,7 +54,8 @@ body{
             background-position:center;
             background-color:   #ebfbf3 
 
-        } 
+        }
+        
 
         .redes{
             margin-left: 20px;
@@ -65,6 +66,13 @@ body{
             justify-content:center;
             gap: 20px;
 
+        }
+
+        .logeo{
+
+            width:50px;
+            height:50px;
+            border-radius: 60%;
         }
 
     .navegacion {

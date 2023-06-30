@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/css/index_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=Roboto+Slab&display=swap rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e1ff4ec2ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@NaN,0,0,0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Nutristar</title>
+
+
+</head>
+
+<body>
+
+    <div class="conteiner">
+
+        <section class="principal">
+
+            <header>
+
+                <div class="logo"></div>
+
+                <div class="redes">
+
+                    <a class = "log_redes" id="ig" href="https://www.instagram.com/snutristar/"target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a class = "log_redes" id="fb" href="https://www.facebook.com/profile.php?id=100092837370528"target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                    <a class = "log_redes" id="lk" href="http://www.linkedin.com/in/arnutristar"target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+
+                </div>
+
+            </header>
+
+            <nav class="navegacion">
+
+                <ul class="nav_info">
+
+                    <li><a class="nav_categoria" href="index.html"><span class="material-symbols-outlined">home</span><h4 class="ul_categoria">Home</h4></a></li>
+
+                    <li class="productos">
+
+                        <div class="log_prod"><span class="material-symbols-outlined">menu</span><h4 class="ul_categoria">Productos</h4></div>
+
+                        <ul class="list_product">
+
+                                <li class="product">Proteina</li>
+
+                                <li class="product">Creatina</li>
+
+                                <li class="product">BCAA</li>
+
+                                <li class="product">Ganador de Peso</li>
+                        </ul>
+
+                    </li>
+
+                    <li><a class="nav_categoria" href="{{url_for('nosotros')}}"><span class="material-symbols-outlined">info</span><h4 class="ul_categoria">Nosotros</h4></a></li>
+                    <li><a class="nav_categoria" href="{{url_for('contacto')}}"><span class="material-symbols-outlined">contact_support</span><h4 class="ul_categoria">Contacto</h4></a></li>
+                    <li class="logeo_usuario"><img class="logeo" src="static\imagenes\logeo.jpg" alt=""><h4 class="ul_categoria">{{datos[0][0]}}</h4></li>
+                    
+                </ul>
+
+            </nav>
+
+        </section>
+
+        <div class="ban_empresa"></div>
+
+        <section class="secundaria">
+
+            <div class="secu_content">
+
+                <article class="banerlat_iz"></article>
+
+                <article class="novedades">
+
+                    <h4 class="nov_titulo">Novedades Populares</h4>
+
+                    <div class="nov_sup">
+
+                        <div class="novedad_1">
+
+                            <div class="nov_prote"></div>
+
+                            <h4 class="tipo_product">Proteina</h4>
+
+                            <h4 class="nom_product">Platinum Nitro Whey Protein</h4>
+
+                        </div>
+
+                        <div class="novedad_2">
+
+                            <div class="nov_amino"></div>
+
+                            <h4 class="tipo_product">Aminoacido</h4>
+
+                            <h4 class="nom_product">Amino Performance Booster</h4>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="nov_inf">
+                        
+                        <div class="novedad_3">
+
+                            <div class="nov_gainer"></div>
+
+                            <h4 class="tipo_product">Ganador de Peso</h4>
+
+                            <h4 class="nom_product">Mutant Mass</h4>
+
+                        </div>
+
+                        <div class="novedad_4">
+                            
+                            <div class="nov_creatina"></div>
+
+                            <h4 class="tipo_product">Creatina</h4>
+
+                            <h4 class="nom_product">Creatina Monohidratada</h4>
+
+                        </div>
+
+                    </div>
+
+
+                </article>
+                <article class="banerlat_der"></article>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+                <div class="foot_info">
+
+                    <div class="cuenta_info">
+
+                            <h4 class="foot_titulo">Mi Cuenta</h4>
+                            <ul class="link_info">
+                                <li ><a class="link_contacto" href="{{url_for('index')}}"><h5>Iniciar Sesión</h5></a></li>
+                                <li > <a class="link_contacto" href="#"><h5>Mis Pedidos</h5></a></li>
+                                <li ><a class="link_contacto" href="#"><h5>Datos Personales</h5></a></li>
+                    
+                            </ul>
+                    </div>
+
+
+                    <div class="nosotros_info">
+
+                                <h4 class="foot_titulo">Sobre Nosotros</h4>
+                                <ul class="link_info">
+                                    <li ><a class="link_contacto" href="{{url_for('index')}}"><h5>Información</h5></a></li>
+                                    <li ><a  class="link_contacto" href="https://goo.gl/maps/9hFfLg4NC3Fpv6u78"><h5>Encontranos</h5></a></li>
+                                    <li ><a class="link_contacto" href="politicadeprivacidad.html"><h5>Politica de privacidad</h5></a></li>
+                                </ul>
+                    </div>
+
+                    <div class="contact_info">
+
+                            <h4 class="foot_titulo">Contactanos</h4>
+                            
+                            <ul class="link_info">
+
+                                    <li ><a class="link_contacto" href="mailto:snutrisrar@gmail.com"><span class="material-symbols-outlined" id="contacto_simbolo">mail</span><h5>snutristar@gmail.com</h5></a></li>
+                                    <li ><a class="link_contacto" href="https://wa.me/5491157414459"><span class="material-symbols-outlined" id="contacto_simbolo">call</span><h5>1557414459</h5></a></li>
+                                    <li ><a class="link_contacto" href="https://goo.gl/maps/9hFfLg4NC3Fpv6u78"><span class="material-symbols-outlined" id="contacto_simbolo">pin_drop</span><h5>Av. Santa Fe 3159 - CP 1435 - CABA</h5></a></li>
+                            </ul>
+                    </div>  
+                           
+                </div>
+    
+                <h4 class="copy"> &copy 2023 Nutristar / Todos los derechos reservados</h2>
+          
+    
+        </footer>
+
+    </div>
+            
+</body>
+</html>
