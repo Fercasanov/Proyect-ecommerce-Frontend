@@ -49,7 +49,7 @@ body{
             padding: 100px;
             margin-left: 30px;
             background-color: #46e7b1;
-            background-image: url(imagenes/logo2.jpeg);
+            background-image: url(/static/imagenes/logo2.jpeg);
             background-repeat: no-repeat;
             background-size:contain;
             background-position:center;
@@ -261,7 +261,12 @@ body{
 
             .registro:hover{
 
-                color:#b6cdf7
+                color:#89aef4;
+            }
+
+            .registro_aceptado:hover{
+
+                color:#9dbef9;
             }
 
 /* FOOTER */

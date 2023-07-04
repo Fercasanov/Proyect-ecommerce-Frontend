@@ -44,7 +44,8 @@ def storage():
  cursor = conn.cursor()
  cursor.execute(sql,datos)
  conn.commit()
- return redirect(url_for('index'))
+ data = "Se ha registrado correctamente, puede iniciar sesión"
+ return render_template("ecommerce/registro.html", data=data)
 
 
 @app.route('/log_usuario', methods=['POST'])

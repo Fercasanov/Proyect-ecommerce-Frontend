@@ -15,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="/static/script.js"></script>
     <title>Nutristar</title>
 
 </head>
@@ -82,7 +82,7 @@
                     <input type="password" name="contraseña" id="password" placeholder="Password" size="30">
                     <button class="button_sesion" type="submit"><h4>Iniciar Sesión</h4></button>
                     <a class="link_registro" href="{{url_for('registro')}}"><h4 class="registro">¿No tiene una cuenta? Cree una aqui</h4><span class="material-symbols-outlined" id="flecha">chevron_right</span></a>
-                    <p style="color: red;"> {{alerta}} </p>
+                    <p style="color: red; font-weight: bold;"> {{alerta}} </p>
                </form>
 
         </section>

@@ -48,7 +48,7 @@ body{
             padding: 100px;
             margin-left: 30px;
             background-color: #46e7b1;
-            background-image: url(imagenes/logo2.jpeg);
+            background-image: url(/static/imagenes/logo2.jpeg);
             background-repeat: no-repeat;
             background-size:contain;
             background-position:center;
@@ -82,7 +82,11 @@ body{
         justify-content: center;
         background-color: #f7f6f9;
     }
+        span{
 
+            color: #000000;
+        }
+        
        .nav_info{
             display: flex;
             flex-flow: row nowrap;
@@ -168,7 +172,7 @@ body{
 
 .ban_empresa{
     height: auto;
-    background-image: url(imagenes/ban_empresa1.jpeg);
+    background-image: url(/static/imagenes/ban_empresa1.jpeg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -185,18 +189,18 @@ body{
                         
         0% {
                         
-            background-image: url(imagenes/ban_empresa1.jpeg);
+            background-image: url(/static/imagenes/ban_empresa1.jpeg);
                     }
 
         30% {
                         
-            background-image: url(imagenes/ban_empresa1.jpeg);
+            background-image: url(/static/imagenes/ban_empresa1.jpeg);
                     }
 
                         
         100%{
                         
-            background-image: url(imagenes/ban_empresa2.jpeg);
+            background-image: url(/static/imagenes/ban_empresa2.jpeg);
                     }
                                 
         }
@@ -286,7 +290,7 @@ body{
                 align-self: center;
                 padding: 100px;
  
-                background-image: url(imagenes/proteina.jpg);
+                background-image: url(/static/imagenes/proteina.jpg);
                 background-repeat: no-repeat;
                 background-size:contain;
                 background-position:center;
@@ -305,7 +309,7 @@ body{
                 align-self: center;
                 padding: 100px;
     
-                background-image: url(imagenes/amino.jpg);
+                background-image: url(/static/imagenes/amino.jpg);
                 background-repeat: no-repeat;
                 background-size:contain;
                 background-position:center;
@@ -323,7 +327,7 @@ body{
                 align-self: center;
                 padding: 100px;
                 background-color:  #ebfbf3;
-                background-image: url(imagenes/gainer.jpg);
+                background-image: url(/static/imagenes/gainer.jpg);
                 background-repeat: no-repeat;
                 background-size:contain;
                 background-position:center;
@@ -339,7 +343,7 @@ body{
             .nov_creatina{
                 align-self: center;
                 padding: 100px;
-                background-image: url(imagenes/creatina.jpg);
+                background-image: url(/static/imagenes/creatina.jpg);
                 background-repeat: no-repeat;
                 background-size:contain;
                 background-position:center;
@@ -357,7 +361,7 @@ body{
 
         .banerlat_iz{
             flex-basis: 20%;
-            background-image: url(imagenes/banner1.jpg);
+            background-image: url(/static/imagenes/banner1.jpg);
             background-repeat: no-repeat;
             background-size:contain;
             background-color:   #ffffff;
@@ -369,7 +373,7 @@ body{
         .banerlat_der{
             flex-basis: 20%;
             background-color:   #ffffff;
-            background-image: url(imagenes/banner2.jpg);
+            background-image: url(/static/imagenes/banner2.jpg);
             background-repeat: no-repeat;
             background-size:contain;
             background-position: center;

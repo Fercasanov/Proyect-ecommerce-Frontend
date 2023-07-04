@@ -159,7 +159,40 @@ body{
                         }
 
 
-
+                        .ban_empresa{
+                            height: auto;
+                            background-image: url(/static/imagenes/ban_empresa1.jpeg);
+                            background-size: contain;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            padding: 300px 0px 240px 0px;
+                            animation-name: ban_empresa;
+                            animation-duration: 10s;
+                            animation-delay: 2s;
+                            animation-direction: reverse;
+                            animation-iteration-count: infinite;
+                                            
+                            }
+                                            
+                            @keyframes ban_empresa {
+                                                
+                                0% {
+                                                
+                                    background-image: url(/static/imagenes/ban_empresa1.jpeg);
+                                            }
+                        
+                                30% {
+                                                
+                                    background-image: url(/static/imagenes/ban_empresa1.jpeg);
+                                            }
+                        
+                                                
+                                100%{
+                                                
+                                    background-image: url(/static/imagenes/ban_empresa2.jpeg);
+                                            }
+                                                        
+                                }
 
 /* Seccion 2*/
 
